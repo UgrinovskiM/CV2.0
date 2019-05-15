@@ -6,7 +6,7 @@ $('#profileThreeBody').hide();
 // $('#profileFourBody').hide();
 
 $('#modalButton').show();
-
+// midnightblue
 //modal nav bar shows and hides templates
 $('#updateProfileButton').on('click', () => {
     //Profile 01 Tab
@@ -19,7 +19,7 @@ $('#updateProfileButton').on('click', () => {
         $('#profileFourBody').hide();
         $('#profileOneBody').show();
         //If first toggle active
-        if ($("#profile01 .switch-box:nth-child(1) .switch").hasClass("off")){
+        if (!$("#profile01 .switch-box:nth-child(1) .switch").hasClass("off")){
             $("#profileOneBody h1, #profileOneBody h3, #profileOneBody i").addClass('no-color');
             $("#profileOneBody .smallestHr").addClass('no-color-border');
             $("#profileOneBody .progress-bar").addClass('no-color-background');
@@ -33,7 +33,7 @@ $('#updateProfileButton').on('click', () => {
             
         }
         //If third toggle active
-        if ($("#profile01 .switch-box:nth-child(3) .switch").hasClass("off")){
+        if (!$("#profile01 .switch-box:nth-child(3) .switch").hasClass("off")){
             $('#profOneProgress').addClass('display-none');
         } else {
             $('#profOneProgress').removeClass('display-none');
@@ -43,7 +43,7 @@ $('#updateProfileButton').on('click', () => {
             
         }
         //If fifth toggle active
-        if ($("#profile01 .switch-box:nth-child(5) .switch").hasClass("off")){
+        if (!$("#profile01 .switch-box:nth-child(5) .switch").hasClass("off")){
             $('#profOne').removeClass('display-none');
         } else{
             $('#profOne').addClass('display-none');
@@ -95,13 +95,41 @@ $('#updateProfileButton').on('click', () => {
         $('#profileTwoBody').hide();
         $('#profileThreeBody').hide();
         $('#profileFourBody').show();
+
+        if ($("#profile04 .switch-box:nth-child(1) .switch").hasClass("off")){
+            
+        }
+        //If second toggle active
+        if ($("#profile04 .switch-box:nth-child(2) .switch").hasClass("off")){
+            
+        }
+        //If third toggle active
+        if ($("#profile04 .switch-box:nth-child(3) .switch").hasClass("off")){
+            
+        }
+        //If fourth toggle active
+        if ($("#profile04 .switch-box:nth-child(4) .switch").hasClass("off")){
+            
+        }
+        //If fifth toggle active
+        if (!$("#profile04 .switch-box:nth-child(5) .switch").hasClass("off")){
+            $('#topSection').css('background-color','midnightblue');
+            $('#middleSection').css('background-color','royalblue');
+        } else {
+            $('#topSection').css('background-color','#4a284b');
+            $('#middleSection').css('background-color','#311332');
+        }
     }
 });
 
-// $('#exampleModal').on('hidden.bs.modal',()=>{
-
-//     window.print();
-// })
+$('#printProfileButton').on('click',()=>{
+    // $('#exampleModal').modal('hide');
+    let modal = $('#exampleModalLabel');
+    $(modal).modal('hide');
+    setTimeout(()=>{
+        window.print();
+    },500);
+})
 
 $('.switch-box').on('click',(e)=>{
     let sw = $(e.currentTarget.children[1]);

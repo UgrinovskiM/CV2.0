@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    <!-- Profile settings button -->
     <button id="modalButton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         Profile Settings
     </button>
@@ -58,8 +58,8 @@
                         <div class="tab-pane fade show active" id="profile01" role="tabpanel"
                             aria-labelledby="profile01-tab">
                             <div class="switch-box p-2">
-                                <div class="switch-text">Display/Print Resume in color</div>
-                                <div class="switch">
+                                <div class="switch-text">Display/Print CV in Black and White</div>
+                                <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
                                 </div>
@@ -72,22 +72,22 @@
                                 </div>
                             </div>
                             <div class="switch-box p-2">
-                                <div class="switch-text">Show progress bar</div>
-                                <div class="switch">
+                                <div class="switch-text">Hide Skills progress</div>
+                                <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
                                 </div>
                             </div>
                             <div class="switch-box p-2">
-                                <div class="switch-text">Switch Experience with Education</div>
-                                <div class="switch">
+                                <div class="switch-text">Show Education on first page</div>
+                                <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
                                 </div>
                             </div>
                             <div class="switch-box p-2">
                                 <div class="switch-text">Show image</div>
-                                <div class="switch">
+                                <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
                                 </div>
@@ -169,12 +169,51 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Profile 04 Tab -->
+                        <div class="tab-pane fade" id="profile04" role="tabpanel" aria-labelledby="profile04-tab">
+                            <div class="switch-box p-2">
+                                <div class="switch-text"> Resume in color</div>
+                                <div class="switch off">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch off">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch off">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch off">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Change color</div>
+                                <div class="switch off">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" id="updateProfileButton">Update profile</button>
-                    <button type="button" class="btn btn-info" id="printProfileButton">Print profile</button>
+                    <button type="button" class="btn btn-info" id="printProfileButton" data-dismiss="modal">Print
+                        profile</button>
                 </div>
             </div>
         </div>
@@ -235,10 +274,6 @@
                 color: #007bff;
             }
 
-            #profileOneBody .p-5 {
-                padding-bottom: 0 !important;
-            }
-
             #profileOneBody .row {
                 margin-left: 0;
                 margin-right: 0;
@@ -252,18 +287,25 @@
                 float: left;
                 margin-right: 20px;
             }
+
+            .prof-one-info p {
+                padding: 10px 0;
+            }
+
+            #profileOneBody .titleClass {
+                padding: 10px 0;
+            }
         </style>
-        <div class="row">
+        <div class="row p-5">
             <div class="col-8 p-5">
                 <img id="profOne" class="display-none" src="./img/mu.jpg" width="100">
                 <h1 class="fullNameClass"></h1><br>
                 <h5 class="titleClass"></h5>
                 <p class="aboutMeClass"></p>
             </div>
-            <div class="col-4 p-5 text-right">
+            <div class="col-4 p-5 text-right prof-one-info">
                 <p><span class="emailClass"></span><i class="far fa-envelope"></i></p>
                 <p><span class="phoneClass"></span><i class="fas fa-phone"></i></p>
-                <!-- <p><span class="placeOfBirthClass"></span><i class="fas fa-map-marker-alt"></i></p> -->
                 <p><span class="perwebClass"></span><i class="fas fa-globe"></i></p>
                 <p><span class="linkedinAccClass"></span><i class="fab fa-linkedin-in"></i></p>
                 <p><span class="upworkAccClass"></span><i class="fas fa-briefcase"></i></p>
@@ -276,27 +318,27 @@
             </div>
             <hr>
             <div class="col-12 p-5 text-center">
-                <h5 class="workTitle01Class"></h5>
+                <h5 class="workTitle01Class py-3"></h5>
                 <hr class="smallestHr">
-                <p class="workPlace01Class"></p>
+                <p class="workPlace01Class py-3"></p>
                 <p class="workInfo01Class"></p>
             </div>
         </div>
         <hr class="smallHr">
         <div class="row">
             <div class="col-12 p-5 text-center">
-                <h5 class="workTitle02Class"></h5>
+                <h5 class="workTitle02Class py-3"></h5>
                 <hr class="smallestHr">
-                <p class="workPlace02Class"></p>
+                <p class="workPlace02Class py-3"></p>
                 <p class="workInfo02Class"></p>
             </div>
         </div>
         <hr class="smallHr">
         <div class="row">
             <div class="col-12 p-5 text-center">
-                <h5 class="workTitle03Class"></h5>
+                <h5 class="workTitle03Class py-3"></h5>
                 <hr class="smallestHr">
-                <p class="workPlace03Class"></p>
+                <p class="workPlace03Class py-3"></p>
                 <p class="workInfo03Class"></p>
             </div>
         </div>
@@ -307,27 +349,27 @@
             </div>
             <hr>
             <div class="col-12 p-5 text-center">
-                <h5 class="eduTitle01Class"></h5>
+                <h5 class="eduTitle01Class py-3"></h5>
                 <hr class="smallestHr">
-                <p class="eduPlace01Class"></p>
+                <p class="eduPlace01Class py-3"></p>
                 <p class="eduInfo01Class"></p>
             </div>
         </div>
         <hr class="smallHr">
         <div class="row">
             <div class="col-12 p-5 text-center">
-                <h5 class="eduTitle02Class"></h5>
+                <h5 class="eduTitle02Class py-3"></h5>
                 <hr class="smallestHr">
-                <p class="eduPlace02Class"></p>
+                <p class="eduPlace02Class py-3"></p>
                 <p class="eduInfo02Class"></p>
             </div>
         </div>
         <hr class="smallHr">
         <div class="row">
             <div class="col-12 p-5 text-center">
-                <h5 class="eduTitle03Class"></h5>
+                <h5 class="eduTitle03Class py-3"></h5>
                 <hr class="smallestHr">
-                <p class="eduPlace03Class"></p>
+                <p class="eduPlace03Class py-3"></p>
                 <p class="eduInfo03Class"></p>
             </div>
         </div>
@@ -337,7 +379,7 @@
                 <h3>Additional information</h3>
             </div>
             <hr>
-            <div class="col-6 p-5">
+            <div class="col-6 p-5 prof-one-info">
                 <p>Address: <span class="addressClass"></span></p>
                 <p>Date of Birth: <span class="dateOfBirthClass"></span></p>
                 <p>Place of Birth: <span class="placeOfBirthClass"></span></p>
@@ -345,23 +387,23 @@
                 <p>Gender: <span class="genderClass"></span></p>
             </div>
             <div id="profOneProgress" class="col-6 p-5">
-                <div class="">
+                <div class="pb-1">
                     <div class="skill01Class text-right"></div>
                     <div class="skillOnePercentClass"></div>
                 </div>
-                <div class="">
+                <div class="py-1">
                     <div class="skill02Class text-right"></div>
                     <div class="skill02PercentClass"></div>
                 </div>
-                <div class="">
+                <div class="py-1">
                     <div class="skill03Class text-right"></div>
                     <div class="skill03PercentClass "></div>
                 </div>
-                <div class="">
+                <div class="py-1">
                     <div class="skill04Class text-right"></div>
                     <div class="skill04PercentClass"></div>
                 </div>
-                <div class="">
+                <div class="pt-1">
                     <div class="skill05Class text-right"></div>
                     <div class="skill05PercentClass"></div>
                 </div>
@@ -427,10 +469,6 @@
                 color: #212121;
             }
 
-            #profileTwoBody .row {
-                background-color: #f5f5f5;
-            }
-
             h3 {
                 letter-spacing: 2px;
             }
@@ -460,10 +498,11 @@
                 font-style: italic;
             }
 
-            /* END OF RIGHT SIDE */
-            /* CLASS FOR LEFT SIDE */
+            #profTwoProgress .progress-bar {
+                background-color: #3c3d41;
+            }
 
-            /* END OF LEFT SIDE */
+            /* END OF RIGHT SIDE */
             /* END FOR BODY */
 
             /* START OF MEDIA QUERIES FOR THIRD SAMPLE */
@@ -527,20 +566,20 @@
                 <div class="col-12">
                     <div id="experience">
                         <h3 class="my-5">WORK EXPERIENCE</h3>
-                        <div class="workOne">
+                        <div class="workOne py-3">
                             <p class="workPlace">Purple Dot | 2019 to present</p>
                             <p class="workTitle">Front End Developer</p>
                             <p class="workInfo">Developing web application with HTML, CSS, JavaScript, jQuery.</p>
                         </div>
                         <hr>
-                        <div class="workTwo">
+                        <div class="workTwo py-3">
                             <p class="workPlace">Voyage | 2017 to present</p>
                             <p class="workTitle">Graphic Designer</p>
                             <p class="workInfo">Design articles for magazine & posters. Design weekly cover photos
                                 for Voyage websites.</p>
                         </div>
                         <hr>
-                        <div class="workThree">
+                        <div class="workThree py-3">
                             <p class="workPlace">42 Studios & UpWork | 2014 to present</p>
                             <p class="workTitle">Web & Graphic Designer</p>
                             <p class="workInfo">Design websites in HTML, CSS and WordPress. Graphic design for logo,
@@ -554,19 +593,19 @@
                 <div class="col-12">
                     <div id="education">
                         <h3 class="my-5 text-center">EDUCATION</h3>
-                        <div id="eduOne">
+                        <div id="eduOne" class="py-3">
                             <p id="eduPlace01" class="eduPlace01Class"></p>
                             <p id="eduTitle01" class="eduTitle01Class"></p>
                             <p id="eduInfo01" class="eduInfo01Class"></p>
                         </div>
                         <hr>
-                        <div id="eduTwo">
+                        <div id="eduTwo" class="py-3">
                             <p id="eduPlace02" class="eduPlace02Class"></p>
                             <p id="eduTitle02" class="eduTitle02Class"></p>
                             <p id="eduInfo02" class="eduInfo02Class"></p>
                         </div>
                         <hr>
-                        <div id="eduThree">
+                        <div id="eduThree" class="py-3">
                             <p id="eduPlace03" class="eduPlace03Class"></p>
                             <p id="eduTitle03" class="eduTitle03Class"></p>
                             <p id="eduInfo03" class="eduInfo03Class"></p>
@@ -601,6 +640,30 @@
                     </div>
                 </div>
             </div>
+            <div class="row p-5">
+                <div id="profTwoProgress" class="col-12">
+                    <div class="pb-1">
+                        <div class="skill01Class"></div>
+                        <div class="skillOnePercentClass"></div>
+                    </div>
+                    <div class="py-1">
+                        <div class="skill02Class"></div>
+                        <div class="skill02PercentClass"></div>
+                    </div>
+                    <div class="py-1">
+                        <div class="skill03Class"></div>
+                        <div class="skill03PercentClass "></div>
+                    </div>
+                    <div class="py-1">
+                        <div class="skill04Class"></div>
+                        <div class="skill04PercentClass"></div>
+                    </div>
+                    <div class="pt-1">
+                        <div class="skill05Class"></div>
+                        <div class="skill05PercentClass"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- End of profile 02 -->
@@ -623,7 +686,7 @@
                 margin-bottom: 30px;
             }
 
-            .row {
+            #profileThreeBody .row {
                 background-color: #FFFFFF;
                 /* padding: 30px; */
             }
@@ -953,7 +1016,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- End of profile 04 -->
 
