@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: #ffffffcc;
+}
+#introIndex{
+    background-image: url(assets/black-black-and-white-black-white-6663.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section{
+    height: 100vh;
+    /* background-color: grey; */
+}
+.sectionText{
+    width: 500px;
+}
+#menu ul{
+    display: inline-flex;
+    margin:0;
+}
+#menu li {
+    list-style: none;
+}
+.row{
+    margin:0;
+}
+#backToTop{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #ffffffcc;
+}
+#introIndex div{
+    background-color: #ffffffa1;
+}
+#featuresIndex{
+    background-image: url(assets/art-artist-background-316466.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

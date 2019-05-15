@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <button id="modalButton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Profile Settings
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Personal settings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="profile01-tab" data-toggle="tab" href="#profile01" role="tab"
+                                aria-controls="profile01" aria-selected="true">Profile 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile02-tab" data-toggle="tab" href="#profile02" role="tab"
+                                aria-controls="profile02" aria-selected="false">Profile 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile03-tab" data-toggle="tab" href="#profile03" role="tab"
+                                aria-controls="profile03" aria-selected="false">Profile 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile04-tab" data-toggle="tab" href="#profile04" role="tab"
+                                aria-controls="profile04" aria-selected="false">Profile 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile05-tab" data-toggle="tab" href="#profile05" role="tab"
+                                aria-controls="profile05" aria-selected="false">Profile 5</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- Profile 01 Tab -->
+                        <div class="tab-pane fade show active" id="profile01" role="tabpanel"
+                            aria-labelledby="profile01-tab">
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Background color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Show progress bar</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Switch Experience with Education</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Show image</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Profile 02 Tab -->
+                        <div class="tab-pane fade" id="profile02" role="tabpanel" aria-labelledby="profile02-tab">
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Show image</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Profile 03 Tab -->
+                        <div class="tab-pane fade" id="profile03" role="tabpanel" aria-labelledby="profile03-tab">
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="switch-box p-2">
+                                <div class="switch-text">Display/Print Resume in color</div>
+                                <div class="switch">
+                                    <div class="switch-dot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="updateProfileButton">Update profile</button>
+                    <button type="button" class="btn btn-info" id="printProfileButton">Print profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal -->
+    <!-- Start of profile 01 -->
+    <div id="profileOneBody">
+        <style id="profileOneCSS">
+            body {
+                background-color: #FFFFFF;
+            }
+
+            #profileOneBody hr {
+                width: 90%;
+                border: 1px solid black;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #profileOneBody .smallHr {
+                width: 70%;
+                border: 1px solid grey;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #profileOneBody .smallestHr {
+                width: 20%;
+                border: 0.5px solid #007bff;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #profileOneBody h3,
+            #profileOneBody .fullNameClass {
+                color: #007bff;
+                margin-bottom: 0;
+            }
+
+            .no-color {
+                color: #000000 !important;
+            }
+
+            .no-color-border {
+                border-color: #000000 !important;
+            }
+
+            .no-color-background {
+                background-color: #d3d3d3 !important;
+            }
+
+            .fa,
+            .fab,
+            .fal,
+            .far,
+            .fas {
+                margin-left: 7px;
+                color: #007bff;
+            }
+
+            #profileOneBody .p-5 {
+                padding-bottom: 0 !important;
+            }
+
+            #profileOneBody .row {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            #profileOneBody .col-8 {
+                padding-right: 0 !important;
+            }
+
+            #profOne {
+                float: left;
+                margin-right: 20px;
+            }
+        </style>
+        <div class="row">
+            <div class="col-8 p-5">
+                <img id="profOne" class="display-none" src="./img/mu.jpg" width="100">
+                <h1 class="fullNameClass"></h1><br>
+                <h5 class="titleClass"></h5>
+                <p class="aboutMeClass"></p>
+            </div>
+            <div class="col-4 p-5 text-right">
+                <p><span class="emailClass"></span><i class="far fa-envelope"></i></p>
+                <p><span class="phoneClass"></span><i class="fas fa-phone"></i></p>
+                <!-- <p><span class="placeOfBirthClass"></span><i class="fas fa-map-marker-alt"></i></p> -->
+                <p><span class="perwebClass"></span><i class="fas fa-globe"></i></p>
+                <p><span class="linkedinAccClass"></span><i class="fab fa-linkedin-in"></i></p>
+                <p><span class="upworkAccClass"></span><i class="fas fa-briefcase"></i></p>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-12 text-center">
+                <h3>Work experience</h3>
+            </div>
+            <hr>
+            <div class="col-12 p-5 text-center">
+                <h5 class="workTitle01Class"></h5>
+                <hr class="smallestHr">
+                <p class="workPlace01Class"></p>
+                <p class="workInfo01Class"></p>
+            </div>
+        </div>
+        <hr class="smallHr">
+        <div class="row">
+            <div class="col-12 p-5 text-center">
+                <h5 class="workTitle02Class"></h5>
+                <hr class="smallestHr">
+                <p class="workPlace02Class"></p>
+                <p class="workInfo02Class"></p>
+            </div>
+        </div>
+        <hr class="smallHr">
+        <div class="row">
+            <div class="col-12 p-5 text-center">
+                <h5 class="workTitle03Class"></h5>
+                <hr class="smallestHr">
+                <p class="workPlace03Class"></p>
+                <p class="workInfo03Class"></p>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-12 text-center">
+                <h3>Education experience</h3>
+            </div>
+            <hr>
+            <div class="col-12 p-5 text-center">
+                <h5 class="eduTitle01Class"></h5>
+                <hr class="smallestHr">
+                <p class="eduPlace01Class"></p>
+                <p class="eduInfo01Class"></p>
+            </div>
+        </div>
+        <hr class="smallHr">
+        <div class="row">
+            <div class="col-12 p-5 text-center">
+                <h5 class="eduTitle02Class"></h5>
+                <hr class="smallestHr">
+                <p class="eduPlace02Class"></p>
+                <p class="eduInfo02Class"></p>
+            </div>
+        </div>
+        <hr class="smallHr">
+        <div class="row">
+            <div class="col-12 p-5 text-center">
+                <h5 class="eduTitle03Class"></h5>
+                <hr class="smallestHr">
+                <p class="eduPlace03Class"></p>
+                <p class="eduInfo03Class"></p>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-12 text-center">
+                <h3>Additional information</h3>
+            </div>
+            <hr>
+            <div class="col-6 p-5">
+                <p>Address: <span class="addressClass"></span></p>
+                <p>Date of Birth: <span class="dateOfBirthClass"></span></p>
+                <p>Place of Birth: <span class="placeOfBirthClass"></span></p>
+                <p>Languages: <span class="languagesClass"></span></p>
+                <p>Gender: <span class="genderClass"></span></p>
+            </div>
+            <div id="profOneProgress" class="col-6 p-5">
+                <div class="">
+                    <div class="skill01Class text-right"></div>
+                    <div class="skillOnePercentClass"></div>
+                </div>
+                <div class="">
+                    <div class="skill02Class text-right"></div>
+                    <div class="skill02PercentClass"></div>
+                </div>
+                <div class="">
+                    <div class="skill03Class text-right"></div>
+                    <div class="skill03PercentClass "></div>
+                </div>
+                <div class="">
+                    <div class="skill04Class text-right"></div>
+                    <div class="skill04PercentClass"></div>
+                </div>
+                <div class="">
+                    <div class="skill05Class text-right"></div>
+                    <div class="skill05PercentClass"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of profile 01 -->
+
+    <!-- Start of profile 02 -->
+    <div id="profileTwoBody">
+        <style id="profileTwoCSS">
+            a:link {
+                color: #3c3d41 !important;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            a:visited {
+                color: #3c3d41 !important;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            a:hover {
+                color: #3c3d41 !important;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            /*  END OF CLASSES FOR ALL */
+
+            /* CLASS FOR HEADER */
+            #sectionOne {
+                background-color: #3c3d41;
+                color: #f9f9f9;
+            }
+
+            #headerWrapper {
+                border: 1px solid #f9f9f9;
+                /* margin: 50px; */
+            }
+
+            #fullName03 {
+                font-weight: 500;
+                letter-spacing: 3px;
+            }
+
+            #title {
+                font-family: 'Lato', sans-serif;
+                letter-spacing: 3px;
+            }
+
+            #headerWrapper hr {
+                background-color: #f9f9f9;
+                border-width: 2px;
+                width: 20%;
+            }
+
+            /* END FOR HEADER */
+            /* CLASS FOR BODY */
+            #profileTwoBody #sectionTwo {
+                background-color: #f5f5f5;
+                color: #212121;
+            }
+
+            #profileTwoBody .row {
+                background-color: #f5f5f5;
+            }
+
+            h3 {
+                letter-spacing: 2px;
+            }
+
+            /* CLASS FOR RIGHT SIDE */
+            #rightDiv {
+                border-left: 2px solid #3c3d41;
+            }
+
+            #sectionTwo hr {
+                background-color: #3c3d41;
+                border-width: 2px;
+            }
+
+            .workPlace,
+            #eduPlace01,
+            #eduPlace02,
+            #eduPlace03 {
+                font-weight: bold;
+            }
+
+            .workTitle,
+            #eduTitle01,
+            #eduTitle02,
+            #eduTitle03 {
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            /* END OF RIGHT SIDE */
+            /* CLASS FOR LEFT SIDE */
+
+            /* END OF LEFT SIDE */
+            /* END FOR BODY */
+
+            /* START OF MEDIA QUERIES FOR THIRD SAMPLE */
+
+            /* // Medium devices (tablets, less than 992px) */
+            @media (max-width: 991.98px) {
+                .container-fluid {
+                    width: 100%;
+                }
+            }
+
+            /* // Small devices (landscape phones, less than 768px) */
+            @media (max-width: 767.98px) {
+                #headerWrapper {
+                    width: 100% !important;
+                }
+            }
+
+            /* // Extra small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) {
+
+                p,
+                h3,
+                .text-right {
+                    text-align: center !important;
+                }
+
+                .flex-row-reverse {
+                    flex-direction: row !important;
+                }
+
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+        </style>
+        <div class="container-fluid p-5" id="sectionOne">
+            <img id="profTwo" src="./img/mu.jpg" class="display-none" width="150">
+            <div class="mx-auto p-5 m-5 w-50 d-flex flex-column align-items-center text-center" id="headerWrapper">
+                <h1 class="fullNameClass" id="fullName03"></h1>
+                <hr>
+                <h5 class="text-uppercase titleClass" id="title"></h5>
+            </div>
+        </div>
+        <!-- second section body -->
+        <div class="container-fluid" id="sectionTwo">
+            <!-- <div class="row p-5"> -->
+            <!-- about -->
+            <div class="row p-5">
+                <div class="col-12">
+                    <div id="about">
+                        <h3 class="my-5">ABOUT</h3>
+                        <p>Hello people, nice to meet you.</p>
+                        <p id="aboutMe" class="aboutMeClass"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- work experience -->
+            <div class="row p-5">
+                <div class="col-12">
+                    <div id="experience">
+                        <h3 class="my-5">WORK EXPERIENCE</h3>
+                        <div class="workOne">
+                            <p class="workPlace">Purple Dot | 2019 to present</p>
+                            <p class="workTitle">Front End Developer</p>
+                            <p class="workInfo">Developing web application with HTML, CSS, JavaScript, jQuery.</p>
+                        </div>
+                        <hr>
+                        <div class="workTwo">
+                            <p class="workPlace">Voyage | 2017 to present</p>
+                            <p class="workTitle">Graphic Designer</p>
+                            <p class="workInfo">Design articles for magazine & posters. Design weekly cover photos
+                                for Voyage websites.</p>
+                        </div>
+                        <hr>
+                        <div class="workThree">
+                            <p class="workPlace">42 Studios & UpWork | 2014 to present</p>
+                            <p class="workTitle">Web & Graphic Designer</p>
+                            <p class="workInfo">Design websites in HTML, CSS and WordPress. Graphic design for logo,
+                                business card, poster, brochure in Adobe Illustrator and Photoshop.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- education -->
+            <div class="row p-5">
+                <div class="col-12">
+                    <div id="education">
+                        <h3 class="my-5 text-center">EDUCATION</h3>
+                        <div id="eduOne">
+                            <p id="eduPlace01" class="eduPlace01Class"></p>
+                            <p id="eduTitle01" class="eduTitle01Class"></p>
+                            <p id="eduInfo01" class="eduInfo01Class"></p>
+                        </div>
+                        <hr>
+                        <div id="eduTwo">
+                            <p id="eduPlace02" class="eduPlace02Class"></p>
+                            <p id="eduTitle02" class="eduTitle02Class"></p>
+                            <p id="eduInfo02" class="eduInfo02Class"></p>
+                        </div>
+                        <hr>
+                        <div id="eduThree">
+                            <p id="eduPlace03" class="eduPlace03Class"></p>
+                            <p id="eduTitle03" class="eduTitle03Class"></p>
+                            <p id="eduInfo03" class="eduInfo03Class"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-6">
+                    <div id="addressOne">
+                        <h3 class="my-5">ADDRESS</h3>
+                        <Address>
+                            <p><strong>Address: </strong><span class="addressClass"></span></p>
+                            <p><strong>Date of Birth: </strong><span class="dateOfBirthClass"></span></p>
+                            <p><strong>Place of Birth: </strong><span class="placeOfBirthClass"></span></p>
+                            <p><strong>Languages: </strong><span class="languagesClass"></span></p>
+                            <p><strong>Gender: </strong><span class="genderClass"></span></p>
+                        </Address>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="address">
+                        <h3 class="my-5">CONTACT</h3>
+                        <Address>
+                            <p><strong>E-mail: </strong><span class="emailClass"></span></p>
+                            <p><strong>Phone: </strong><span class="phoneClass"></span></p>
+                            <p><strong>Personal website: </strong><span class="perwebClass"></span>
+                            </p>
+                            <p><strong>Upwork: </strong><span class="upworkAccClass"></span></p>
+                            <p><strong>Linkedin: </strong><span class="linkedinAccClass"></span></p>
+                        </Address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of profile 02 -->
+
+    <!-- Start of profile 03 -->
+    <div id="profileThreeBody">
+        <style id="profileThreeCSS">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            #profileThreeBody body {
+                background-color: #eeeeee;
+                -webkit-print-color-adjust: exact !important;
+            }
+
+            .container {
+                /* width: 80%; */
+                margin-bottom: 30px;
+            }
+
+            .row {
+                background-color: #FFFFFF;
+                /* padding: 30px; */
+            }
+
+            .no-padding {
+                padding: 0;
+            }
+
+            #profileImgWrapper {
+                color: #FFFFFF;
+            }
+
+            #secOneFullName {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            #secOneBackground {
+                background: url(img/Artboard\ 1.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 500px;
+                /* opacity: 0.5; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .alignCenter {
+                text-align: center;
+            }
+
+            #secOneProfile {
+                width: 150px;
+                height: 150px;
+                /* margin: auto; */
+            }
+
+            #progressBar {
+                padding: 30px;
+            }
+
+            #progressBar p {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .progress {
+                margin-bottom: 10px;
+            }
+
+            #secTwoBackground {
+                background: url(img/Artboard\ 1\ copy\ 5.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <div class="container shadow mt-5">
+            <div id="secOneBackground" class="row alignCenter">
+                <div id="profileImgWrapper">
+                    <img id="secOneProfile" src="img/mu.jpg" class="rounded">
+                    <div id="secOneFullName" class="fullNameClass alignCenter"></div>
+                    <div id="secOneTitle" class="titleClass"></div>
+                </div>
+            </div>
+            <div class="row" id="secOneAboutSection">
+                <div class="col-7 p-4" id="secOneAbout">
+                    <p>Hello people, nice to meet you.</p>
+                    <p id="aboutMe02" class="aboutMeClass"></p>
+                </div>
+                <div class="col-5 p-4" id="secOneBasicInfo">
+                    <Address>
+                        <p><strong>E-mail: </strong><span class="emailClass"></span></p>
+                        <p><strong>Phone: </strong><span class="phoneClass"></span></p>
+                        <p><strong>Personal website: </strong><span class="perwebClass"></span>
+                        </p>
+                        <p><strong>Upwork: </strong><span class="upworkAccClass"></span></p>
+                        <p><strong>Linkedin: </strong><span class="linkedinAccClass"></span></p>
+                    </Address>
+                </div>
+            </div>
+        </div>
+        <div class="container shadow bg-white rounded">
+            <div id="secTwo" class="row no-padding">
+                <div id="progressBar" class="col-6">
+                    <p>Adobe Illustrator</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                    </div>
+                    <p>Adobe Photoshop</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+                    </div>
+                    <p>HTML 5 & CSS 3</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+                    </div>
+                    <p>Wordpress</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                    <p>JavaScript</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div id="secTwoBackground" class="col-6">
+
+                </div>
+            </div>
+        </div>
+        <div class="container shadow bg-white rounded">
+            <div id="secThreeExperience" class="row p-4">
+                <div class="col-12">Work Experience</div>
+                <div class="col-12 row work-wrapper">
+                    <div class="col-2">2017 to present</div>
+                    <div class="col-10">
+                        <div>Graphic Designer - Voyage</div>
+                        <div>Design articles for magazine & posters. Design weekly cover photos for Voyage websites.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 row work-wrapper">
+                    <div class="col-2">2014 to present</div>
+                    <div class="col-10">
+                        <div>HTML/CSS/Wordpress & Graphic Design - 42 Studios & UpWork</div>
+                        <div>Design websites in HTML, CSS and WordPress. Graphic design for logo, business card, poster,
+                            brochure in Adobe Illustrator and Photoshop.</div>
+                    </div>
+                </div>
+                <div class="col-12 row work-wrapper">
+                    <div class="col-2">2016-2016</div>
+                    <div class="col-10">
+                        <div>Marketing and Sales assistant - Genel Canon</div>
+                        <div>E-mail and Social Media Marketing. Web administrator for new posts, products and gallery.
+                            Internet and phone sales.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container shadow bg-white rounded">
+            <div id="secThreeEducation" class="row p-4">
+                <div class="col-12">Education</div>
+                <div class="col-12 row work-wrapper">
+                    <div class="col-2">2017-2017</div>
+                    <div class="col-10">
+                        <div>HTML5 with JavaScript and CSS3 - Semos Education</div>
+                        <div>Microsoft Official Course 70-480. Programming in HTML5 with JavaScript and CSS3.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 row work-wrapper">
+                    <div class="col-2">2016-2016</div>
+                    <div class="col-10">
+                        <div>Graphic design & Illustrator - Brainster</div>
+                        <div>Advanced course for learning designer software. Adobe Photoshop and Illustrator.</div>
+                    </div>
+                </div>
+                <div class="col-12 row work-wrapper">
+                    <div class="col-2">2010-2013</div>
+                    <div class="col-10">
+                        <div>Human Resource Management - UTMS Skopje</div>
+                        <div>Team building, business communication, employment, time management, career management.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of profile 03 -->
+
+    <!-- Start of profile 04 -->
+    <div id="profileFourBody">
+        <style id="profileFourCSS">
+            @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
+
+            #profileFourBody p,
+            #profileFourBody h1,
+            #profileFourBody h2,
+            #profileFourBody h3,
+            #profileFourBody h4,
+            #profileFourBody h5 {
+                font-family: 'Raleway', sans-serif;
+            }
+
+            #topSection {
+                background-color: #4a284b;
+                color: #FFFFFF;
+            }
+
+            #middleSection {
+                background-color: #311332;
+                color: #FFFFFF;
+            }
+
+            #profileFourBody .fa,
+            #profileFourBody .fab,
+            #profileFourBody .fal,
+            #profileFourBody .far,
+            #profileFourBody .fas {
+                margin-right: 7px;
+                color: #ffc107;
+            }
+
+            #profileFourBody #middleSection a:link {
+                color: #FFFFFF !important;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            #profileFourBody #middleSection a:visited {
+                color: #FFFFFF !important;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            #profileFourBody #middleSection a:hover {
+                color: #ffc107 !important;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            #profFour {
+                border-width: 3px !important;
+            }
+
+            #profileFourBody h3 {
+                padding-bottom: 5px;
+                border-bottom: 2px solid #ffc107;
+                display: inline-block;
+            }
+        </style>
+
+        <div class="row" id="topSection">
+            <div class="col-lg-9 col-md-9 p-5">
+                <h1 class="fullNameClass font-weight-bold"></h1><br>
+                <h5 class="titleClass text-warning font-weight-bold"></h5><br>
+                <p class="aboutMeClass"></p>
+            </div>
+            <div class="col-lg-3 col-md-3 d-flex justify-content-center align-items-center">
+                <img id="profFour" class="border border-warning rounded-circle" src="./img/mu.jpg" width="200">
+            </div>
+        </div>
+        <div class="row" id="middleSection">
+            <div class="col-6 p-5">
+                <p class="py-3 mb-0"><i class="far fa-envelope"></i><span class="emailClass"></span></p>
+                <p class="py-3 mb-0"><i class="fas fa-globe"></i><span class="perwebClass"></span></p>
+                <p class="py-3 mb-0"><i class="fas fa-map-marker-alt"></i><span class="addressClass"></span></p>
+            </div>
+            <div class="col-6 p-5">
+                <p class="py-3 mb-0"><i class="fas fa-phone"></i><span class="phoneClass"></span></p>
+                <p class="py-3 mb-0"><i class="far fa-calendar-alt"></i><span class="dateOfBirthClass"></span></p>
+                <p class="py-3 mb-0"><i class="fas fa-map-marked-alt"></i><span class="placeOfBirthClass"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 p-5">
+                <div>
+                    <h3 class="font-weight-bold text-warning mb-5 text-uppercase">Work experience</h3>
+                    <div class="mb-5">
+                        <h5 class="workTitle01Class font-weight-bold"></h5>
+                        <p class="workPlace01Class font-italic"></p>
+                        <p class="workInfo01Class"></p>
+                    </div>
+                    <div class="mb-5">
+                        <h5 class="workTitle02Class font-weight-bold"></h5>
+                        <p class="workPlace02Class font-italic"></p>
+                        <p class="workInfo02Class"></p>
+                    </div>
+                    <div class="mb-5">
+                        <h5 class="workTitle03Class font-weight-bold"></h5>
+                        <p class="workPlace03Class font-italic"></p>
+                        <p class="workInfo03Class"></p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-weight-bold text-warning mb-5 text-uppercase">Additional Information</h3>
+                    <p><i class="fas fa-language"></i><span class="languagesClass"></span></p>
+                    <p><i class="fas fa-venus-mars"></i><span class="genderClass"></span></p>
+                    <p><i class="fab fa-linkedin-in"></i><span class="linkedinAccClass"></span></p>
+                    <p><i class="fas fa-briefcase"></i><span class="upworkAccClass"></span></p>
+                </div>
+            </div>
+            <div class="col-6 p-5">
+                <h3 class="font-weight-bold text-warning mb-5 text-uppercase">Skills</h3>
+                <div>
+                    <button type="button" class="btn btn-warning mr-3 mb-3">
+                        <div class="skill01Class text-white"></div>
+                    </button>
+                    <button type="button" class="btn btn-warning mr-3 mb-3">
+                        <div class="skill02Class text-white"></div>
+                    </button>
+                    <button type="button" class="btn btn-warning mr-3 mb-3">
+                        <div class="skill03Class text-white"></div>
+                    </button>
+                    <button type="button" class="btn btn-warning mr-3 mb-3">
+                        <div class="skill04Class text-white"></div>
+                    </button>
+                    <button type="button" class="btn btn-warning mr-3 mb-3">
+                        <div class="skill05Class text-white"></div>
+                    </button>
+                </div>
+                <div>
+                    <h3 class="font-weight-bold text-warning my-5 text-uppercase">Education experience</h3>
+                    <div class="mb-5">
+                        <h5 class="eduTitle01Class font-weight-bold"></h5>
+                        <p class="eduPlace01Class font-italic"></p>
+                        <p class="eduInfo01Class"></p>
+                    </div>
+                    <div class="mb-5">
+                        <h5 class="eduTitle02Class font-weight-bold"></h5>
+                        <p class="eduPlace02Class font-italic"></p>
+                        <p class="eduInfo02Class"></p>
+                    </div>
+                    <div class="mb-5">
+                        <h5 class="eduTitle03Class font-weight-bold"></h5>
+                        <p class="eduPlace03Class font-italic"></p>
+                        <p class="eduInfo03Class"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End of profile 04 -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="users.json"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

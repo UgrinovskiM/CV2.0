@@ -1,0 +1,63 @@
+@page { 
+    /* size: auto; */
+    margin: 0;
+}
+
+/* IF DIVS IN ROW - PRINT ROWS WITH BREAKS */
+@media print {
+    .row {page-break-inside: avoid;}
+    #modalButton {display: none;}
+    .container-fluid{width: 100%;}
+}
+#modalButton{
+    position: fixed;
+    z-index: 99999;
+    left: 50%;
+    transform: translate(-50%);
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    -webkit-print-color-adjust: exact !important;
+}
+.container-fluid{
+    width: 80%;
+}
+/* Switch button */
+.switch {
+    background-color: #007bff;
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+    border-radius: 25px;
+}
+.switch:hover{
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.switch-dot{
+    background-color: #ffffff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.switch-box{
+    display: flex;
+    justify-content: space-between
+}
+.switch-text{
+    display: flex;
+    align-items: center;
+}
+.switch.off{
+    background-color: #dee2e6;
+    justify-content: flex-start;
+}
+.display-none{
+    display: none;
+}

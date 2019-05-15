@@ -1,0 +1,376 @@
+let users =[{
+    "id": 1,
+    //Sign up
+    "fullName": "Marjan Ugrinovski",
+    "peremail": "marjan.ugrinovski@yahoo.com",
+    //Additional Information
+    "title": "Front End Developer",
+    "address": "Evtim Sprostranov 34/1-2",
+    "dateOfBirth": "28.10.1991",
+    "placeOfBirth": "Skopje, Macedonia",
+    "languages": "English, Macedonian",
+    "gender": "Male",
+    "aboutMe": "I am Marjan Ugrinovki and this is my personal portfolio. I have created my first website in 2014 and I am filling my portfolio ever since. I have worked alone and with other people (teams) on different projects. I had a chance to work with many native and worldwide clients. Below you can see some of the Testimonials and Portfolio pieces. Hope you will like them.",
+    //Contact Information
+    "phoneNumber": "00389 70 123 456",
+    "personalWeb": "http://ugrinovskim.com/",
+    "upworkAcc": "https://www.upwork.com/o/profiles/users/_~01132501771658b978/",
+    "linkedinAcc": "https://www.linkedin.com/in/UgrinovskiM/",
+
+    //Work Information
+    //Work01
+    "workPlace01": "Purple Dot",
+    "workTitle01": "Front End Developer",
+    "workNumberFrom01": "2019",
+    "workNumberTo01": "present",
+    "workShortDes01": "Developing web application with HTML, CSS, JavaScript, jQuery.",
+    //Work02
+    "workPlace02": "Voyage",
+    "workTitle02": "Graphic Designer",
+    "workNumberFrom02": "2017",
+    "workNumberTo02": "present",
+    "workShortDes02": "Design articles for magazine & posters. Design weekly cover photos for Voyage websites.",
+    //Work03
+    "workPlace03": "42 Studios & UpWork",
+    "workTitle03": "Web & Graphic Designer",
+    "workNumberFrom03": "2014",
+    "workNumberTo03": "present",
+    "workShortDes03": "Design websites in HTML, CSS and WordPress. Graphic design for logo, business card, poster, brochure in Adobe Illustrator and Photoshop.",
+
+    //Education Information
+    //Edu01
+    "eduPlace01": "Seavus Education & Development Center",
+    "eduTitle01": "Web Development",
+    "eduNumberFrom01": "2018",
+    "eduNumberTo01": "present",
+    "eduShortDes01": "Learning Front-end technologies with HTML, CSS, JavaScript and jQuery. Back End technologies with CSharp.",
+    //Edu02
+    "eduPlace02": "Semos Education",
+    "eduTitle02": "Front End Development",
+    "eduNumberFrom02": "2017",
+    "eduNumberTo02": "2017",
+    "eduShortDes02": "Microsoft Official Course 70-480. Programming in HTML5 with JavaScript and CSS3.",
+    //Edu03
+    "eduPlace03": "UTMS Skopje",
+    "eduTitle03": "Human Resource Management",
+    "eduNumberFrom03": "2010",
+    "eduNumberTo03": "2013",
+    "eduShortDes03": "Team building, business communication, employment, time management, career management.",
+
+    //Skills Information
+    //Skill01
+    "skill1": "HTML5",
+    "skill1Percent": "95",
+    //Skill02
+    "skill2": "CSS3",
+    "skill2Percent": "100",
+    //Skill03
+    "skill3": "Javascript",
+    "skill3Percent": "80",
+    //Skill04
+    "skill4": "Adobe Illustrator",
+    "skill4Percent": "90",
+    //Skill05
+    "skill5": "Adobe Photoshop",
+    "skill5Percent": "50",
+  }, {
+    "id": 2,
+    //Sign up
+    "fullName": "Bruce Wayne",
+    "peremail": "batmanisawesome@yahoo.com",
+    //Additional Information
+    "title": "Billionaire Playboy",
+    "address": "1007 Mountain Drive",
+    "dateOfBirth": "28.10.1991",
+    "placeOfBirth": "Gotham, United States",
+    "languages": "English, Macedonian",
+    "gender": "Male",
+    "aboutMe": "Unlike most superheroes, I don’t possess any superpowers; rather, I rely on my genius intellect, physical prowess, martial arts abilities, detective skills, science and technology, vast wealth, intimidation, and indomitable will.",
+    //Contact Information
+    "phoneNumber": "00389 70 123 456",
+    "personalWeb": "http://ugrinovskim.com/",
+    "upworkAcc": "https://www.upwork.com/o/profiles/users/_~01132501771658b978/",
+    "linkedinAcc": "https://www.linkedin.com/in/UgrinovskiM/",
+
+    //Work Information
+    //Work01
+    "workPlace01": "Purple Dot",
+    "workTitle01": "Front End Developer",
+    "workNumberFrom01": "2019",
+    "workNumberTo01": "present",
+    "workShortDes01": "Developing web application with HTML, CSS, JavaScript, jQuery.",
+    //Work02
+    "workPlace02": "Voyage",
+    "workTitle02": "Graphic Designer",
+    "workNumberFrom02": "2017",
+    "workNumberTo02": "present",
+    "workShortDes02": "Design articles for magazine & posters. Design weekly cover photos for Voyage websites.",
+    //Work03
+    "workPlace03": "42 Studios & UpWork",
+    "workTitle03": "Web & Graphic Designer",
+    "workNumberFrom03": "2014",
+    "workNumberTo03": "present",
+    "workShortDes03": "Design websites in HTML, CSS and WordPress. Graphic design for logo, business card, poster, brochure in Adobe Illustrator and Photoshop.",
+
+    //Education Information
+    //Edu01
+    "eduPlace01": "Seavus Education & Development Center",
+    "eduTitle01": "Web Development",
+    "eduNumberFrom01": "2018",
+    "eduNumberTo01": "present",
+    "eduShortDes01": "Learning Front-end technologies with HTML, CSS, JavaScript and jQuery. Back End technologies with CSharp.",
+    //Edu02
+    "eduPlace02": "Semos Education",
+    "eduTitle02": "Front End Development",
+    "eduNumberFrom02": "2017",
+    "eduNumberTo02": "2017",
+    "eduShortDes02": "Microsoft Official Course 70-480. Programming in HTML5 with JavaScript and CSS3.",
+    //Edu03
+    "eduPlace03": "UTMS Skopje",
+    "eduTitle03": "Human Resource Management",
+    "eduNumberFrom03": "2010",
+    "eduNumberTo03": "2013",
+    "eduShortDes03": "Team building, business communication, employment, time management, career management.",
+
+    //Skills Information
+    //Skill01
+    "skill1": "HTML5",
+    "skill1Percent": "95",
+    //Skill02
+    "skill2": "CSS3",
+    "skill2Percent": "100",
+    //Skill03
+    "skill3": "Javascript",
+    "skill3Percent": "80",
+    //Skill04
+    "skill4": "Adobe Illustrator",
+    "skill4Percent": "90",
+    //Skill05
+    "skill5": "Adobe Photoshop",
+    "skill5Percent": "50",
+  }, {
+    "id": 3,
+    //Sign up
+    "fullName": "Elon Musk",
+    "peremail": "elon@teslamotors.com",
+    //Additional Information
+    "title": "Entrepreneur, Engineer, Inventor and Investor",
+    "address": "Electric Ave, Sparks, NV 89434",
+    "dateOfBirth": "28.10.1991",
+    "placeOfBirth": "Los Angeles, USA",
+    "languages": "English, Afrikaans",
+    "gender": "Male",
+    "aboutMe": "Aiming to reduce global warming through sustainable energy production and consumption. Planning to reduce the risk of human extinction by making life multi-planetary and setting up a human colony on Mars.",
+    //Contact Information
+    "phoneNumber": "650-681-5000",
+    "personalWeb": "https://www.tesla.com/elon-musk/",
+    "upworkAcc": "elon.musk",
+    "linkedinAcc": "https://www.linkedin.com/in/UgrinovskiM/",
+
+    //Work Information
+    //Work01
+    "workPlace01": "Solar City",
+    "workTitle01": "Chairman",
+    "workNumberFrom01": "2006",
+    "workNumberTo01": "present",
+    "workShortDes01": "Created a collaboration between SolarCity and Tesla to use electric vehicle batteries to smooth the impact of rooftop solar on the power grid. Provided the initial concept and financial capital.",
+    //Work02
+    "workPlace02": "Tesla Motors",
+    "workTitle02": "CEO and Product Architect",
+    "workNumberFrom02": "2004",
+    "workNumberTo02": "present",
+    "workShortDes02": "Currently oversee the company's product strategy - including the design, enginnering and manufacturing of more and more affordable electirc vehicles for mainstream customers. Insisted on using carbon fiber composite materials in the hull to minimize weight, developed the battery module and even some elements of design, like the headlights. Received Global Green 2006 product design award for Tesla Roadster design.",
+    //Work03
+    "workPlace03": "SpaceX",
+    "workTitle03": "CEO and CTO",
+    "workNumberFrom03": "2002",
+    "workNumberTo03": "present",
+    "workShortDes03": "Plans to reduce space transportation costs to enable people to colonize Mars. Oversee the development of rockets and spacecraft for missions to Earth orbit and ultimately to other planets. Developed the Falcon 9 spacecraft which replaced the space shuttle when it retired in 2011.",
+
+    //Education Information
+    //Edu01
+    "eduPlace01": "Wharton School of the University of Pennsylvania",
+    "eduTitle01": "Bachelor of Science in Economics",
+    "eduNumberFrom01": "1992",
+    "eduNumberTo01": "1995",
+    "eduShortDes01": "",
+    //Edu02
+    "eduPlace02": "Penn's College of Arts and Sciences",
+    "eduTitle02": "Bachelor of Science in Physics",
+    "eduNumberFrom02": "1992",
+    "eduNumberTo02": "1995",
+    "eduShortDes02": "",
+    //Edu03
+    "eduPlace03": "",
+    "eduTitle03": "",
+    "eduNumberFrom03": "",
+    "eduNumberTo03": "",
+    "eduShortDes03": "",
+
+    //Skills Information
+    //Skill01
+    "skill1": "Thinking through first principles",
+    "skill1Percent": "100",
+    //Skill02
+    "skill2": "Micromanaging",
+    "skill2Percent": "95",
+    //Skill03
+    "skill3": "Time Management",
+    "skill3Percent": "100",
+    //Skill04
+    "skill4": "Leadership",
+    "skill4Percent": "95",
+    //Skill05
+    "skill5": "Creativity",
+    "skill5Percent": "90",
+  }, {
+    "id": 4,
+    //Sign up
+    "fullName": "Anthony Edward Stark",
+    "peremail": "tonystark@starkindustries.com",
+    //Additional Information
+    "title": "Adviser, Iron Man",
+    "address": "10880 Malibu Point 90265 CA",
+    "dateOfBirth": "May 29, 1970",
+    "placeOfBirth": "California, US",
+    "languages": "English, Spanish, Italian, Dari",
+    "gender": "Male",
+    "aboutMe": "I am a billionaire industrialist and inventor. I am the former CEO of Stark Industries, a conglomerate originally started by my father, Howard Stark. While in Afghanistan, I was captured and was ordered to build the Jericho missile. Instead I used their resources to build a suit of armor and make escape. Returning to America, I improved my armor and become the armored superhero known as Iron Man.",
+    //Contact Information
+    "phoneNumber": "310-577-1566",
+    "personalWeb": "",
+    "upworkAcc": "",
+    "linkedinAcc": "",
+
+    //Work Information
+    //Work01
+    "workPlace01": "S.H.I.E.L.D.",
+    "workTitle01": "S.H.I.E.L.D. Adviser",
+    "workNumberFrom01": "2010",
+    "workNumberTo01": "present",
+    "workShortDes01": "Just being IRON MAN :D",
+    //Work02
+    "workPlace02": "Stark Industries",
+    "workTitle02": "CEO",
+    "workNumberFrom02": "1992",
+    "workNumberTo02": "2010",
+    "workShortDes02": "Design from concept to creation of the IRONMAN ARMORED FLYING SUIT SERIES. Revitalized Cooperative relationship between global engineering innovation and stark industries.",
+    //Work03
+    "workPlace03": "Stark Industries",
+    "workTitle03": "Chief Design Engineer",
+    "workNumberFrom03": "1988",
+    "workNumberTo03": "1991",
+    "workShortDes03": "Managed Internal technical resources, and assigned responsibilities to business partners, contracted ressources and team members. Developed NATO autonomous robotics Management systems Avionics.",
+
+    //Education Information
+    //Edu01
+    "eduPlace01": "Cambridge, MA",
+    "eduTitle01": "Engineering Massachusets Institute of Technology",
+    "eduNumberFrom01": "1984",
+    "eduNumberTo01": "1987",
+    "eduShortDes01": "",
+    //Edu02
+    "eduPlace02": "Andover, MA",
+    "eduTitle02": "Phillips Academy",
+    "eduNumberFrom02": "1977",
+    "eduNumberTo02": "1984",
+    "eduShortDes02": "",
+    //Edu03
+    "eduPlace03": "",
+    "eduTitle03": "",
+    "eduNumberFrom03": "",
+    "eduNumberTo03": "",
+    "eduShortDes03": "",
+
+    //Skills Information
+    //Skill01
+    "skill1": "Keeping the world safe from aliens",
+    "skill1Percent": "100",
+    //Skill02
+    "skill2": "Mentoring Spider-Man",
+    "skill2Percent": "75",
+    //Skill03
+    "skill3": "Time Management",
+    "skill3Percent": "100",
+    //Skill04
+    "skill4": "Leadership",
+    "skill4Percent": "100",
+    //Skill05
+    "skill5": "Creativity",
+    "skill5Percent": "100",
+  }, {
+    "id": 5,
+    //Sign up
+    "fullName": "Sherlock Holmes",
+    "peremail": "elon@teslamotors.com",
+    //Additional Information
+    "title": "Entrepreneur, Engineer, Inventor and Investor",
+    "address": "Electric Ave, Sparks, NV 89434",
+    "dateOfBirth": "28.10.1991",
+    "placeOfBirth": "Los Angeles, USA",
+    "languages": "English, Afrikaans",
+    "gender": "Male",
+    "aboutMe": "Aiming to reduce global warming through sustainable energy production and consumption. Planning to reduce the risk of human extinction by making life multi-planetary and setting up a human colony on Mars.",
+    //Contact Information
+    "phoneNumber": "650-681-5000",
+    "personalWeb": "https://www.tesla.com/elon-musk/",
+    "upworkAcc": "elon.musk",
+    "linkedinAcc": "https://www.linkedin.com/in/UgrinovskiM/",
+
+    //Work Information
+    //Work01
+    "workPlace01": "Solar City",
+    "workTitle01": "Chairman",
+    "workNumberFrom01": "2006",
+    "workNumberTo01": "present",
+    "workShortDes01": "Created a collaboration between SolarCity and Tesla to use electric vehicle batteries to smooth the impact of rooftop solar on the power grid. Provided the initial concept and financial capital.",
+    //Work02
+    "workPlace02": "Tesla Motors",
+    "workTitle02": "CEO and Product Architect",
+    "workNumberFrom02": "2004",
+    "workNumberTo02": "present",
+    "workShortDes02": "Currently oversee the company's product strategy - including the design, enginnering and manufacturing of more and more affordable electirc vehicles for mainstream customers. Insisted on using carbon fiber composite materials in the hull to minimize weight, developed the battery module and even some elements of design, like the headlights. Received Global Green 2006 product design award for Tesla Roadster design.",
+    //Work03
+    "workPlace03": "SpaceX",
+    "workTitle03": "CEO and CTO",
+    "workNumberFrom03": "2002",
+    "workNumberTo03": "present",
+    "workShortDes03": "Plans to reduce space transportation costs to enable people to colonize Mars. Oversee the development of rockets and spacecraft for missions to Earth orbit and ultimately to other planets. Developed the Falcon 9 spacecraft which replaced the space shuttle when it retired in 2011.",
+
+    //Education Information
+    //Edu01
+    "eduPlace01": "Wharton School of the University of Pennsylvania",
+    "eduTitle01": "Bachelor of Science in Economics",
+    "eduNumberFrom01": "1992",
+    "eduNumberTo01": "1995",
+    "eduShortDes01": "",
+    //Edu02
+    "eduPlace02": "Penn's College of Arts and Sciences",
+    "eduTitle02": "Bachelor of Science in Physics",
+    "eduNumberFrom02": "1992",
+    "eduNumberTo02": "1995",
+    "eduShortDes02": "",
+    //Edu03
+    "eduPlace03": "",
+    "eduTitle03": "",
+    "eduNumberFrom03": "",
+    "eduNumberTo03": "",
+    "eduShortDes03": "",
+
+    //Skills Information
+    //Skill01
+    "skill1": "Thinking through first principles",
+    "skill1Percent": "100",
+    //Skill02
+    "skill2": "Micromanaging",
+    "skill2Percent": "95",
+    //Skill03
+    "skill3": "Time Management",
+    "skill3Percent": "100",
+    //Skill04
+    "skill4": "Leadership",
+    "skill4Percent": "95",
+    //Skill05
+    "skill5": "Creativity",
+    "skill5Percent": "90",
+  }]

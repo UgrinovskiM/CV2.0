@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styleOne.css"> -->
+    <!-- <link rel="stylesheet" href="styleThree.css"> -->
+    <!-- <link rel="stylesheet" href="print.css"> -->
+</head>
+
+<body>
+    <nav class="fixed-top d-flex justify-content-between">
+        <div class="p-3" id="logo">Online CV Creator</div>
+        <div id="menu">
+            <ul>
+                <li class="p-3"><a href="#aboutIndex">About</a></li>
+                <li class="p-3"><a href="#featuresIndex">Features</a></li>
+                <li class="p-3"><a href="#signUpIndex">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="backToTop" class="p-2"><a href="#introIndex"><i class="fas fa-arrow-up fa-2x"></i></a></div>
+    <div id="introIndex" class="row section d-flex justify-content-center align-items-center p-5">
+        <div class="sectionText shadow p-5 mb-5">
+            <h3>Scroll down to see more about the Features of Online CV creator or click the button to start now</h3>
+            <a role="button" class="btn btn-outline-primary btn-lg" href="#signUpIndex">Get started here</a>
+        </div>
+    </div>
+    <div id="aboutIndex" class="row section d-flex justify-content-around align-items-center p-5">
+        <div class="sectionText p-5">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et veniam provident adipisci molestias
+                consequuntur labore eveniet, sit necessitatibus saepe nemo perferendis atque dolorum eum quasi ipsam
+                deserunt delectus minus.</p>
+        </div>
+        <div class="sectionImage p-5">
+            <img src="assets/diagram-direction-electronics-1305360.jpg" width="500px" alt="">
+        </div>
+    </div>
+    <div id="featuresIndex" class="row section d-flex justify-content-around align-items-center p-5">
+        <div class="sectionImage p-5">
+            <img src="assets/above-black-black-and-white-6470.jpg" width="500px" alt="">
+        </div>
+        <div class="sectionText p-5">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et veniam provident adipisci molestias
+                consequuntur labore eveniet, sit necessitatibus saepe nemo perferendis atque dolorum eum quasi ipsam
+                deserunt delectus minus.</p>
+        </div>
+    </div>
+
+    <div id="signUpIndex" class="row form-row section d-flex justify-content-center align-items-center p-5">
+        <!-- Sign up steps -->
+        <!-- <form class="needs-validation" novalidate> -->
+
+        <div id="signUp">
+            <div class="form-group">
+                <h3>Start here by registering with your Full name and email</h3>
+                <div class="form-row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="fullName">Enter your Full Name</label><br>
+                        <input type="text" class="form-control" id="fullName" value="Marjan Ugrinovski" required><br>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="email">Enter your email</label><br>
+                        <input type="email" class="form-control" id="email" value="marjan.ugrinovski@yahoo.com"><br>
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary btn-lg" type="submit" id="signUpBtn">Sign Up</button>
+            </div>
+        </div>
+        <div class="row" id="additionalInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <h3>Let us get to know you little more</h3>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="title">Title</label><br>
+                        <input type="text" class="form-control" id="title" value="Front End Developer"><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="address">Address</label><br>
+                        <input type="text" class="form-control" id="address" value="Evtim Sprostranov 34/1-2"><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="dateOfBirth">Date of Birth</label><br>
+                        <input type="text" class="form-control" id="dateOfBirth" value="28.10.1991"><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="placeOfBirth">Place Of Birth</label><br>
+                        <input type="text" class="form-control" id="placeOfBirth" value="Skopje, Macedonia"><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="languages">Languages</label><br>
+                        <input type="text" class="form-control" id="languages" value="English, Macedonian"><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="gender">Gender</label><br>
+                        <input type="text" class="form-control" id="gender" value="Male"><br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="aboutMe">Describe yourself in couple of sentences</label><br>
+                        <textarea id="aboutMe" class="form-control" cols="50"
+                            rows="10">Hello people, nice to meet you. I am Marjan Ugrinovki and this is my personal portfolio. I have created my first website in 2014 and I am filling my portfolio ever since. I have worked alone and with other people (teams) on different projects. I had a chance to work with many native and worldwide clients. Below you can see some of the Testimonials and Portfolio pieces. Hope you will like them.</textarea><br>
+                    </div>
+                    <button class="btn btn-outline-primary btn-lg" id="eduNextBtn">Go to Education next</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="eduInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <h3>Enter your latest education here</h3>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-lg-6">
+                        <label for="eduTitle01">Education title</label><br>
+                        <input type="text" class="form-control" id="eduTitle01"
+                            value="Seavus Education & Development Center"><br>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label for="eduNumberFrom01">From:</label><br>
+                        <input type="text" class="form-control" id="eduNumberFrom01" value="2018"><br>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label for="eduNumberTo01">To:</label><br>
+                        <input type="text" class="form-control" id="eduNumberTo01" value="to present"><br>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="eduShortDes01">Short Description</label><br>
+                        <textarea id="eduShortDes01"
+                            class="form-control">Learning Front-end technologies with HTML, CSS, JavaScript and jQuery. Back End technologies with CSharp.</textarea><br>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="eduTitle02">Education title</label><br>
+                        <input type="text" class="form-control" id="eduTitle02" value="Semos Education"><br>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="eduNumberFrom02">From:</label><br>
+                        <input type="text" class="form-control" id="eduNumberFrom02" value="2017"><br>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="eduNumberTo02">To:</label><br>
+                        <input type="text" class="form-control" id="eduNumberTo02" value="2017"><br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="eduShortDes02">Short Description</label><br>
+                        <textarea id="eduShortDes02"
+                            class="form-control">Microsoft Official Course 70-480. Programming in HTML5 with JavaScript and CSS3.</textarea><br>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="eduTitle03">Education title</label><br>
+                        <input type="text" class="form-control" id="eduTitle03" value="UTMS Skopje"><br>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="eduNumberFrom03">From:</label><br>
+                        <input type="text" class="form-control" id="eduNumberFrom03" value="2010"><br>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="eduNumberTo03">To:</label><br>
+                        <input type="text" class="form-control" id="eduNumberTo03" value="2013"><br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="eduShortDes03">Short Description</label><br>
+                        <textarea id="eduShortDes03"
+                            class="form-control">Team building, business communication, employment, time management, career management.</textarea><br>
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary btn-lg" id="workNextBtn">Next</button>
+            </div>
+        </div>
+        <div class="row" id="workInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <h3>Enter your latest work experience here</h3>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-lg-6">
+                        <label for="workTitle01">Work title</label><br>
+                        <input type="text" class="form-control" id="workTitle01"
+                            value="Seavus Education & Development Center"><br>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label for="workNumberFrom01">From:</label><br>
+                        <input type="text" class="form-control" id="workNumberFrom01" value="2018"><br>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label for="workNumberTo01">To:</label><br>
+                        <input type="text" class="form-control" id="workNumberTo01" value="to present"><br>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="workShortDes01">Short Description</label><br>
+                        <textarea id="workShortDes01"
+                            class="form-control">Learning Front-end technologies with HTML, CSS, JavaScript and jQuery. Back End technologies with CSharp.</textarea><br>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="workTitle02">Work title</label><br>
+                        <input type="text" class="form-control" id="workTitle02" value="Semos Education"><br>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="workNumberFrom02">From:</label><br>
+                        <input type="text" class="form-control" id="workNumberFrom02" value="2017"><br>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="workNumberTo02">To:</label><br>
+                        <input type="text" class="form-control" id="workNumberTo02" value="2017"><br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="workShortDes02">Short Description</label><br>
+                        <textarea id="workhortDes02"
+                            class="form-control">Microsoft Official Course 70-480. Programming in HTML5 with JavaScript and CSS3.</textarea><br>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="workTitle03">Work title</label><br>
+                        <input type="text" class="form-control" id="workTitle03" value="UTMS Skopje"><br>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="workNumberFrom03">From:</label><br>
+                        <input type="text" class="form-control" id="workNumberFrom03" value="2010"><br>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="workNumberTo03">To:</label><br>
+                        <input type="text" class="form-control" id="workNumberTo03" value="2013"><br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="workhortDes03">Short Description</label><br>
+                        <textarea id="workShortDes03"
+                            class="form-control">Team building, business communication, employment, time management, career management.</textarea><br>
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary btn-lg" id="contactNextBtn">Next</button>
+            </div>
+        </div>
+
+        <div class="row" id="contactInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <!-- Contact information -->
+                    <label for="phoneNumber">Phone Number</label><br>
+                    <input type="text" class="form-control" id="phoneNumber" value="00389 70 123 456"><br>
+                    <label for="personalWeb">Personal website</label><br>
+                    <input type="text" class="form-control" id="personalWeb" value="http://ugrinovskim.com/"><br>
+                    <label for="upworkAcc">Upwork</label><br>
+                    <input type="text" class="form-control" id="upworkAcc"
+                        value="https://www.upwork.com/o/profiles/users/_~01132501771658b978/"><br>
+                    <label for="linkedinAcc">Linkedin</label><br>
+                    <input type="text" class="form-control" id="linkedinAcc"
+                        value="https://www.linkedin.com/in/UgrinovskiM/"><br>
+
+
+                </div>
+                <button class="btn btn-outline-primary btn-lg" id="skillNextBtn">Next</button>
+            </div>
+        </div>
+        <div class="row" id="skillInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <!-- Skill information -->
+                    <label for="skill1">Add first skill</label><br>
+                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <label for="skill1Percent">Enter a number for percentages</label><br>
+                    <input type="number" id="skill1Percent" value="100"><br>
+                    <label for="skill2">Add second skill</label><br>
+                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <label for="skill2Percent">Enter a number for percentages</label><br>
+                    <input type="number" id="skill2Percent" value="100"><br>
+                    <label for="skill3">Add third skill</label><br>
+                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <label for="skill3Percent">Enter a number for percentages</label><br>
+                    <input type="number" id="skill3Percent" value="100"><br>
+                    <label for="skill4">Add fourth skill</label><br>
+                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <label for="skill4Percent">Enter a number for percentages</label><br>
+                    <input type="number" id="skill4Percent" value="100"><br>
+                    <label for="skill5">Add fifth skill</label><br>
+                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <label for="skill5Percent">Enter a number for percentages</label><br>
+                    <input type="number" id="skill5Percent" value="100"><br>
+                </div>
+                <button class="btn btn-outline-primary btn-lg" id="createProfile">Next</button>
+            </div>
+        </div>
+        <!-- </form> -->
+    </div>
+    <!-- Sign up steps -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="scriptThree.js"></script>
+    <script src="sampleOne.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="users.json"></script>
+</body>
+
+</html>

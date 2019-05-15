@@ -1,0 +1,9 @@
+@page { 
+    /* size: auto; */
+    margin: 0;
+}
+
+/* IF DIVS IN ROW - PRINT ROWS WITH BREAKS */
+/* .row{
+    page-break-inside: avoid;
+} */
