@@ -147,170 +147,170 @@ function createProfile(personalEmail) {
     x = persEmail
 }
 
-$('#createProfile').on('click', () => {
-    $('body').empty();
-    $('body').append(`
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sample Three</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styleThree.css">
-    <link rel="stylesheet" href="print.css">
-    </head>
-    <body>
-    <!-- first section header -->
-    <div class="container-fluid p-5" id="sectionOne">
-        <div class="mx-auto p-5 w-50 d-flex flex-column align-items-center text-center" id="headerWrapper">
-            <h1 class="d-flex justify-content-center" id="fullName">${x.fullName}</h1>
-            <hr>
-            <h5 class="d-flex justify-content-center" id="title">${x.title}</h5>
-        </div>
-    </div>
-    <!-- second section body -->
-    <div class="container-fluid" id="sectionTwo">
-        <div class="row py-5">
-            <!-- left side in body -->
-            <div class="col-lg-4 col-md-4 col-sm-12 px-5" id="leftDiv">
-                <div class="row">
-                    <!-- skills progress bars -->
-                    <div class="col-12">
-                        <h3 class="my-5 text-right">SKILLS</h3>
-                        <div id="progressBar">
-                            <p class="text-right m-0">HTML 5 & CSS 3</p>
-                            <div class="progress flex-row-reverse mb-3">
-                                <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
-                                </div>
-                            </div>
-                            <p class="text-right m-0">Adobe Illustrator</p>
-                            <div class="progress flex-row-reverse mb-3">
-                                <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
-                                </div>
-                            </div>
-                            <p class="text-right m-0">JavaScript</p>
-                            <div class="progress flex-row-reverse mb-3">
-                                <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100
-                                </div>
-                            </div>
-                            <p class="text-right m-0">Wordpress</p>
-                            <div class="progress flex-row-reverse mb-3">
-                                <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%
-                                </div>
-                            </div>
-                            <p class="text-right m-0">Adobe Photoshop</p>
-                            <div class="progress flex-row-reverse mb-3">
-                                <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">70%
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- education -->
-                    <div class="col-12">
-                        <div id="experience">
-                            <h3 class="my-5 text-right">EDUCATION</h3>
-                            <div class="eduOne">
-                                <p class="eduPlace text-right">Seavus Education & Development Center | 2018 to present
-                                </p>
-                                <p class="eduTitle text-right">Web Developer</p>
-                                <p class="eduInfo text-right">Learning Front-end technologies with HTML, CSS, JavaScript
-                                    and jQuery. Back End technologies with CSharp.</p>
-                            </div>
-                            <hr>
-                            <div class="eduTwo">
-                                <p class="eduPlace text-right">Semos Education | 2017 to 2017</p>
-                                <p class="eduTitle text-right">HTML5 with JavaScript and CSS3</p>
-                                <p class="eduInfo text-right">Microsoft Official Course 70-480. Programming in HTML5
-                                    with JavaScript and CSS3.</p>
-                            </div>
-                            <hr>
-                            <div class="eduThree">
-                                <p class="eduPlace text-right">UTMS Skopje | 2010-2013</p>
-                                <p class="eduTitle text-right">Human Resource Management</p>
-                                <p class="eduInfo text-right">Team building, business communication, employment, time
-                                    management, career management.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-12"></div> -->
-            </div>
-            <!-- right side in body -->
-            <div class="col-lg-8 col-md-8 col-sm-12 px-5" id="rightDiv">
-                <div class="row">
-                    <!-- about -->
-                    <div class="col-12">
-                        <div id="about">
-                            <h3 class="my-5">ABOUT</h3>
-                            <p>${x.aboutMe}</p>
-                        </div>
-                    </div>
-                    <!-- work experience -->
-                    <div class="col-12">
-                        <div id="experience">
-                            <h3 class="my-5">WORK EXPERIENCE</h3>
-                            <div class="workOne">
-                                <p class="workPlace">Purple Dot | 2019 to present</p>
-                                <p class="workTitle">Front End Developer</p>
-                                <p class="workInfo">Developing web application with HTML, CSS, JavaScript, jQuery.</p>
-                            </div>
-                            <hr>
-                            <div class="workTwo">
-                                <p class="workPlace">Voyage | 2017 to present</p>
-                                <p class="workTitle">Graphic Designer</p>
-                                <p class="workInfo">Design articles for magazine & posters. Design weekly cover photos
-                                    for Voyage websites.</p>
-                            </div>
-                            <hr>
-                            <div class="workThree">
-                                <p class="workPlace">42 Studios & UpWork | 2014 to present</p>
-                                <p class="workTitle">Web & Graphic Designer</p>
-                                <p class="workInfo">Design websites in HTML, CSS and WordPress. Graphic design for logo,
-                                    business card, poster, brochure in Adobe Illustrator and Photoshop.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div id="address">
-                            <h3 class="my-5">ADDRESS</h3>
-                            <Address>
-                                <p><strong>Adress: </strong>${x.address}</p>
-                                <p><strong>Date of Birth: </strong>${x.dateOfBirth}</p>
-                                <p><strong>Place of Birth: </strong>${x.placeOfBirth}</p>
-                                <p><strong>Languages: </strong>${x.languages}</p>
-                                <p><strong>Gender: </strong>${x.gender}</p>
-                            </Address>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div id="address">
-                            <h3 class="my-5">CONTACT</h3>
-                            <Address>
-                                <p><strong>E-mail: </strong><a target="_blank"
-                                        href="mailto:${x.peremail}">${x.peremail}</a></p>
-                                <p><strong>Phone: </strong><a href="telto:${x.phoneNumber}">${x.phoneNumber}</a></p>
-                                <p><strong>Personal website: </strong><a
-                                        href="${x.personalWeb}">${x.personalWeb}</a></p>
-                                <p><strong>Upwork: </strong><a target="_blank"
-                                        href="${x.upworkAcc}">Personal
-                                        profile</a></p>
-                                <p><strong>Linkedin: </strong><a target="_blank"
-                                        href="${x.linkedinAcc}">Personal profile</a></p>
-                            </Address>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </body>
-    `)
-})
+// $('#createProfile').on('click', () => {
+//     $('body').empty();
+//     $('body').append(`
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+//     <title>Sample Three</title>
+//     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+//     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+//     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+//         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+//     <link rel="stylesheet" href="styleThree.css">
+//     <link rel="stylesheet" href="print.css">
+//     </head>
+//     <body>
+//     <!-- first section header -->
+//     <div class="container-fluid p-5" id="sectionOne">
+//         <div class="mx-auto p-5 w-50 d-flex flex-column align-items-center text-center" id="headerWrapper">
+//             <h1 class="d-flex justify-content-center" id="fullName">${x.fullName}</h1>
+//             <hr>
+//             <h5 class="d-flex justify-content-center" id="title">${x.title}</h5>
+//         </div>
+//     </div>
+//     <!-- second section body -->
+//     <div class="container-fluid" id="sectionTwo">
+//         <div class="row py-5">
+//             <!-- left side in body -->
+//             <div class="col-lg-4 col-md-4 col-sm-12 px-5" id="leftDiv">
+//                 <div class="row">
+//                     <!-- skills progress bars -->
+//                     <div class="col-12">
+//                         <h3 class="my-5 text-right">SKILLS</h3>
+//                         <div id="progressBar">
+//                             <p class="text-right m-0">HTML 5 & CSS 3</p>
+//                             <div class="progress flex-row-reverse mb-3">
+//                                 <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
+//                                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
+//                                 </div>
+//                             </div>
+//                             <p class="text-right m-0">Adobe Illustrator</p>
+//                             <div class="progress flex-row-reverse mb-3">
+//                                 <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
+//                                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%
+//                                 </div>
+//                             </div>
+//                             <p class="text-right m-0">JavaScript</p>
+//                             <div class="progress flex-row-reverse mb-3">
+//                                 <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
+//                                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100
+//                                 </div>
+//                             </div>
+//                             <p class="text-right m-0">Wordpress</p>
+//                             <div class="progress flex-row-reverse mb-3">
+//                                 <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
+//                                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%
+//                                 </div>
+//                             </div>
+//                             <p class="text-right m-0">Adobe Photoshop</p>
+//                             <div class="progress flex-row-reverse mb-3">
+//                                 <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
+//                                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">70%
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <!-- education -->
+//                     <div class="col-12">
+//                         <div id="experience">
+//                             <h3 class="my-5 text-right">EDUCATION</h3>
+//                             <div class="eduOne">
+//                                 <p class="eduPlace text-right">Seavus Education & Development Center | 2018 to present
+//                                 </p>
+//                                 <p class="eduTitle text-right">Web Developer</p>
+//                                 <p class="eduInfo text-right">Learning Front-end technologies with HTML, CSS, JavaScript
+//                                     and jQuery. Back End technologies with CSharp.</p>
+//                             </div>
+//                             <hr>
+//                             <div class="eduTwo">
+//                                 <p class="eduPlace text-right">Semos Education | 2017 to 2017</p>
+//                                 <p class="eduTitle text-right">HTML5 with JavaScript and CSS3</p>
+//                                 <p class="eduInfo text-right">Microsoft Official Course 70-480. Programming in HTML5
+//                                     with JavaScript and CSS3.</p>
+//                             </div>
+//                             <hr>
+//                             <div class="eduThree">
+//                                 <p class="eduPlace text-right">UTMS Skopje | 2010-2013</p>
+//                                 <p class="eduTitle text-right">Human Resource Management</p>
+//                                 <p class="eduInfo text-right">Team building, business communication, employment, time
+//                                     management, career management.</p>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <!-- <div class="col-12"></div> -->
+//             </div>
+//             <!-- right side in body -->
+//             <div class="col-lg-8 col-md-8 col-sm-12 px-5" id="rightDiv">
+//                 <div class="row">
+//                     <!-- about -->
+//                     <div class="col-12">
+//                         <div id="about">
+//                             <h3 class="my-5">ABOUT</h3>
+//                             <p>${x.aboutMe}</p>
+//                         </div>
+//                     </div>
+//                     <!-- work experience -->
+//                     <div class="col-12">
+//                         <div id="experience">
+//                             <h3 class="my-5">WORK EXPERIENCE</h3>
+//                             <div class="workOne">
+//                                 <p class="workPlace">Purple Dot | 2019 to present</p>
+//                                 <p class="workTitle">Front End Developer</p>
+//                                 <p class="workInfo">Developing web application with HTML, CSS, JavaScript, jQuery.</p>
+//                             </div>
+//                             <hr>
+//                             <div class="workTwo">
+//                                 <p class="workPlace">Voyage | 2017 to present</p>
+//                                 <p class="workTitle">Graphic Designer</p>
+//                                 <p class="workInfo">Design articles for magazine & posters. Design weekly cover photos
+//                                     for Voyage websites.</p>
+//                             </div>
+//                             <hr>
+//                             <div class="workThree">
+//                                 <p class="workPlace">42 Studios & UpWork | 2014 to present</p>
+//                                 <p class="workTitle">Web & Graphic Designer</p>
+//                                 <p class="workInfo">Design websites in HTML, CSS and WordPress. Graphic design for logo,
+//                                     business card, poster, brochure in Adobe Illustrator and Photoshop.</p>
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <div class="col-lg-6 col-md-6 col-sm-12">
+//                         <div id="address">
+//                             <h3 class="my-5">ADDRESS</h3>
+//                             <Address>
+//                                 <p><strong>Adress: </strong>${x.address}</p>
+//                                 <p><strong>Date of Birth: </strong>${x.dateOfBirth}</p>
+//                                 <p><strong>Place of Birth: </strong>${x.placeOfBirth}</p>
+//                                 <p><strong>Languages: </strong>${x.languages}</p>
+//                                 <p><strong>Gender: </strong>${x.gender}</p>
+//                             </Address>
+//                         </div>
+//                     </div>
+//                     <div class="col-lg-6 col-md-6 col-sm-12">
+//                         <div id="address">
+//                             <h3 class="my-5">CONTACT</h3>
+//                             <Address>
+//                                 <p><strong>E-mail: </strong><a target="_blank"
+//                                         href="mailto:${x.peremail}">${x.peremail}</a></p>
+//                                 <p><strong>Phone: </strong><a href="telto:${x.phoneNumber}">${x.phoneNumber}</a></p>
+//                                 <p><strong>Personal website: </strong><a
+//                                         href="${x.personalWeb}">${x.personalWeb}</a></p>
+//                                 <p><strong>Upwork: </strong><a target="_blank"
+//                                         href="${x.upworkAcc}">Personal
+//                                         profile</a></p>
+//                                 <p><strong>Linkedin: </strong><a target="_blank"
+//                                         href="${x.linkedinAcc}">Personal profile</a></p>
+//                             </Address>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+//     </body>
+//     `)
+// })

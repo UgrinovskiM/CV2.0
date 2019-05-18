@@ -96,8 +96,10 @@ $('#updateProfileButton').on('click', () => {
         $('#profileThreeBody').hide();
         $('#profileFourBody').show();
 
-        if ($("#profile04 .switch-box:nth-child(1) .switch").hasClass("off")){
-            
+        if (!$("#profile04 .switch-box:nth-child(1) .switch").hasClass("off")){
+            $('#profFour').addClass('display-none');
+        } else {
+            $('#profFour').removeClass('display-none');
         }
         //If second toggle active
         if ($("#profile04 .switch-box:nth-child(2) .switch").hasClass("off")){
