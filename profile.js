@@ -1,9 +1,9 @@
 // Hide profiles on start and open modal
 
-$('#profileOneBody').hide();
+// $('#profileOneBody').hide();
 $('#profileTwoBody').hide();
 $('#profileThreeBody').hide();
-// $('#profileFourBody').hide();
+$('#profileFourBody').hide();
 
 $('#modalButton').show();
 // midnightblue
