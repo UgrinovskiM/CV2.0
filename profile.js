@@ -1,10 +1,10 @@
 // Hide profiles on start and open modal
 
-$('#profileOneBody').hide();
+// $('#profileOneBody').hide();
 $('#profileTwoBody').hide();
 $('#profileThreeBody').hide();
 $('#profileFourBody').hide();
-// $('#profileFiveBody').hide();
+$('#profileFiveBody').hide();
 
 $('#modalButton').show();
 // midnightblue
@@ -18,6 +18,7 @@ $('#updateProfileButton').on('click', () => {
         $('#profileTwoBody').hide();
         $('#profileThreeBody').hide();
         $('#profileFourBody').hide();
+        $('#profileFiveBody').hide();
         $('#profileOneBody').show();
         //If first toggle active
         if (!$("#profile01 .switch-box:nth-child(1) .switch").hasClass("off")){
@@ -55,6 +56,7 @@ $('#updateProfileButton').on('click', () => {
         $('#profileOneBody').hide();
         $('#profileFourBody').hide();
         $('#profileThreeBody').hide();
+        $('#profileFiveBody').hide();
         $('#profileTwoBody').show();
         //If first toggle active
         if ($("#profile02 .switch-box:nth-child(1) .switch").hasClass("off")){
@@ -88,13 +90,15 @@ $('#updateProfileButton').on('click', () => {
         $('#profileOneBody').hide();
         $('#profileTwoBody').hide();
         $('#profileFourBody').hide();
+        $('#profileFiveBody').hide();
         $('#profileThreeBody').show();
     }
     if ($('#profile04-tab').hasClass('active')) {
-        console.log('Profile three activated');
+        console.log('Profile four activated');
         $('#profileOneBody').hide();
         $('#profileTwoBody').hide();
         $('#profileThreeBody').hide();
+        $('#profileFiveBody').hide();
         $('#profileFourBody').show();
 
         if (!$("#profile04 .switch-box:nth-child(1) .switch").hasClass("off")){
@@ -123,8 +127,16 @@ $('#updateProfileButton').on('click', () => {
             $('#middleSection').css('background-color','#311332');
         }
     }
-});
-
+    if ($('#profile05-tab').hasClass('active')) {
+        console.log('Profile five activated');
+        $('#profileOneBody').hide();
+        $('#profileTwoBody').hide();
+        $('#profileThreeBody').hide();
+        $('#profileFourBody').hide();
+        $('#profileFiveBody').show();
+        }
+    }
+)
 $('#printProfileButton').on('click',()=>{
     // $('#exampleModal').modal('hide');
     let modal = $('#exampleModalLabel');
