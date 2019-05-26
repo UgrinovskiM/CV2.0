@@ -8,11 +8,13 @@
     .row {page-break-inside: avoid;}
     #modalButton {display: none;}
     .container-fluid{width: 100%;}
+    #profileFiveBody{width: 100% !important;}
 }
 #modalButton{
     position: fixed;
     z-index: 99999;
     left: 50%;
+    top:0;
     transform: translate(-50%);
 }
 * {
