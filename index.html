@@ -17,10 +17,14 @@
 </head>
 
 <body>
-    <nav class="fixed-top d-flex justify-content-between">
+    <nav class="fixed-top d-flex justify-content-between navbar-expand-md">
         <div class="p-3" id="logo">Online CV Creator</div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         <div id="menu">
             <ul>
+                <li class="p-3"><a href="#introIndex">Home</a></li>
                 <li class="p-3"><a href="#aboutIndex">About</a></li>
                 <li class="p-3"><a href="#featuresIndex">Features</a></li>
                 <li class="p-3"><a href="#signUpIndex">Sign Up</a></li>
@@ -30,26 +34,29 @@
     <div id="backToTop" class="p-2"><a href="#introIndex"><i class="fas fa-arrow-up fa-2x"></i></a></div>
     <div id="introIndex" class="row section d-flex justify-content-center align-items-center p-5">
         <div class="sectionText shadow p-5 mb-5">
-            <h3>Scroll down to see more about the Features of Online CV creator or click the button to start now</h3>
+            <h3>Welcome to the Online CV Creator. You can create your business profile here, choose a template and print at any time</h3>
             <a role="button" class="btn btn-outline-primary btn-lg" href="#signUpIndex">Get started here</a>
         </div>
     </div>
     <div id="aboutIndex" class="row section d-flex justify-content-around align-items-center p-5">
-        <div class="sectionText p-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 sectionText p-5">
             <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et veniam provident adipisci molestias
-                consequuntur labore eveniet, sit necessitatibus saepe nemo perferendis atque dolorum eum quasi ipsam
-                deserunt delectus minus.</p>
+            <h5>Step 01</h5>
+            <p>Fill out the form below</p>
+            <h5>Step 02</h5>
+            <p>Select a template</p>
+            <h5>Step 03</h5>
+            <p>Click print</p>
         </div>
-        <div class="sectionImage p-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 sectionImage p-5">
             <img src="assets/diagram-direction-electronics-1305360.jpg" width="500px" alt="">
         </div>
     </div>
     <div id="featuresIndex" class="row section d-flex justify-content-around align-items-center p-5">
-        <div class="sectionImage p-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 sectionImage p-5">
             <img src="assets/above-black-black-and-white-6470.jpg" width="500px" alt="">
         </div>
-        <div class="sectionText p-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 sectionText p-5">
             <h3>About</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et veniam provident adipisci molestias
                 consequuntur labore eveniet, sit necessitatibus saepe nemo perferendis atque dolorum eum quasi ipsam
@@ -183,7 +190,7 @@
                             class="form-control">Team building, business communication, employment, time management, career management.</textarea><br>
                     </div>
                 </div>
-                <button class="btn btn-outline-primary btn-lg" id="workNextBtn">Next</button>
+                <button class="btn btn-outline-primary btn-lg" id="workNextBtn">Go to work next</button>
             </div>
         </div>
         <div class="row" id="workInformation">
@@ -227,7 +234,7 @@
                     </div>
                     <div class="form-group col-md-12">
                         <label for="workShortDes02">Short Description</label><br>
-                        <textarea id="workhortDes02"
+                        <textarea id="workShortDes02"
                             class="form-control">Microsoft Official Course 70-480. Programming in HTML5 with JavaScript and CSS3.</textarea><br>
                     </div>
                 </div>
@@ -250,7 +257,7 @@
                             class="form-control">Team building, business communication, employment, time management, career management.</textarea><br>
                     </div>
                 </div>
-                <button class="btn btn-outline-primary btn-lg" id="contactNextBtn">Next</button>
+                <button class="btn btn-outline-primary btn-lg" id="contactNextBtn">Go to Contact next</button>
             </div>
         </div>
 
@@ -271,7 +278,7 @@
 
 
                 </div>
-                <button class="btn btn-outline-primary btn-lg" id="skillNextBtn">Next</button>
+                <button class="btn btn-outline-primary btn-lg" id="skillNextBtn">Go to Skills next</button>
             </div>
         </div>
         <div class="row" id="skillInformation">
@@ -283,19 +290,19 @@
                     <label for="skill1Percent">Enter a number for percentages</label><br>
                     <input type="number" id="skill1Percent" value="100"><br>
                     <label for="skill2">Add second skill</label><br>
-                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <input type="text" class="form-control" id="skill2" value="CSS"><br>
                     <label for="skill2Percent">Enter a number for percentages</label><br>
                     <input type="number" id="skill2Percent" value="100"><br>
                     <label for="skill3">Add third skill</label><br>
-                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <input type="text" class="form-control" id="skill3" value="JavaScript"><br>
                     <label for="skill3Percent">Enter a number for percentages</label><br>
                     <input type="number" id="skill3Percent" value="100"><br>
                     <label for="skill4">Add fourth skill</label><br>
-                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <input type="text" class="form-control" id="skill4" value="CSS"><br>
                     <label for="skill4Percent">Enter a number for percentages</label><br>
                     <input type="number" id="skill4Percent" value="100"><br>
                     <label for="skill5">Add fifth skill</label><br>
-                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
+                    <input type="text" class="form-control" id="skill5" value="C#"><br>
                     <label for="skill5Percent">Enter a number for percentages</label><br>
                     <input type="number" id="skill5Percent" value="100"><br>
                 </div>
@@ -312,7 +319,7 @@
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <!-- <script src="script.js"></script> -->
     <script src="scriptThree.js"></script>
-    <script src="sampleOne.js"></script>
+    <!-- <script src="sampleOne.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
