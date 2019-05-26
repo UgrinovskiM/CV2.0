@@ -295,15 +295,23 @@
             #profileOneBody .titleClass {
                 padding: 10px 0;
             }
+            @media (max-width: 991.98px) { 
+                #profileOneBody, .prof-one-info{
+                    text-align: center !important;
+                }
+                #profileOneBody .row:first-of-type{
+                    padding: 3rem 0 !important;
+                }
+            }
         </style>
         <div class="row p-5">
-            <div class="col-8 p-5">
+            <div class="col-lg-8 col-sm-12 p-5">
                 <img id="profOne" class="display-none" src="./img/mu.jpg" width="100">
                 <h1 class="fullNameClass"></h1><br>
                 <h5 class="titleClass"></h5>
                 <p class="aboutMeClass"></p>
             </div>
-            <div class="col-4 p-5 text-right prof-one-info">
+            <div class="col-lg-4 col-sm-12  p-5 text-right prof-one-info">
                 <p><span class="emailClass"></span><i class="far fa-envelope"></i></p>
                 <p><span class="phoneClass"></span><i class="fas fa-phone"></i></p>
                 <p><span class="perwebClass"></span><i class="fas fa-globe"></i></p>
@@ -379,14 +387,14 @@
                 <h3>Additional information</h3>
             </div>
             <hr>
-            <div class="col-6 p-5 prof-one-info">
+            <div class="col-lg-6 col-sm-12 p-5 prof-one-info">
                 <p>Address: <span class="addressClass"></span></p>
                 <p>Date of Birth: <span class="dateOfBirthClass"></span></p>
                 <p>Place of Birth: <span class="placeOfBirthClass"></span></p>
                 <p>Languages: <span class="languagesClass"></span></p>
                 <p>Gender: <span class="genderClass"></span></p>
             </div>
-            <div id="profOneProgress" class="col-6 p-5">
+            <div id="profOneProgress" class="col-lg-6 col-sm-12 p-5">
                 <div class="pb-1">
                     <div class="skill01Class text-right"></div>
                     <div class="skillOnePercentClass"></div>
