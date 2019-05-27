@@ -295,7 +295,7 @@
             #profileOneBody .titleClass {
                 padding: 10px 0;
             }
-            @media (max-width: 991.98px) { 
+            @media (max-width: 768.98px) { 
                 #profileOneBody, .prof-one-info{
                     text-align: center !important;
                 }
@@ -305,13 +305,13 @@
             }
         </style>
         <div class="row p-5">
-            <div class="col-lg-8 col-sm-12 p-5">
+            <div class="col-lg-8 col-md-8 col-sm-12 p-5">
                 <img id="profOne" class="display-none" src="./img/mu.jpg" width="100">
                 <h1 class="fullNameClass"></h1><br>
                 <h5 class="titleClass"></h5>
                 <p class="aboutMeClass"></p>
             </div>
-            <div class="col-lg-4 col-sm-12  p-5 text-right prof-one-info">
+            <div class="col-lg-4 col-md-4 col-sm-12 p-5 text-right prof-one-info">
                 <p><span class="emailClass"></span><i class="far fa-envelope"></i></p>
                 <p><span class="phoneClass"></span><i class="fas fa-phone"></i></p>
                 <p><span class="perwebClass"></span><i class="fas fa-globe"></i></p>
@@ -387,14 +387,14 @@
                 <h3>Additional information</h3>
             </div>
             <hr>
-            <div class="col-lg-6 col-sm-12 p-5 prof-one-info">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-5 prof-one-info">
                 <p>Address: <span class="addressClass"></span></p>
                 <p>Date of Birth: <span class="dateOfBirthClass"></span></p>
                 <p>Place of Birth: <span class="placeOfBirthClass"></span></p>
                 <p>Languages: <span class="languagesClass"></span></p>
                 <p>Gender: <span class="genderClass"></span></p>
             </div>
-            <div id="profOneProgress" class="col-lg-6 col-sm-12 p-5">
+            <div id="profOneProgress" class="col-lg-6  col-md-6 col-sm-12 p-5">
                 <div class="pb-1">
                     <div class="skill01Class text-right"></div>
                     <div class="skillOnePercentClass"></div>
@@ -524,7 +524,7 @@
 
             /* // Small devices (landscape phones, less than 768px) */
             @media (max-width: 767.98px) {
-                #headerWrapper {
+                #profileTwoBody #headerWrapper {
                     width: 100% !important;
                 }
             }
@@ -532,9 +532,9 @@
             /* // Extra small devices (portrait phones, less than 576px) */
             @media (max-width: 575.98px) {
 
-                p,
-                h3,
-                .text-right {
+                #profileTwoBody p,
+                #profileTwoBody h3,
+                #profileTwoBody .text-right {
                     text-align: center !important;
                 }
 
@@ -622,7 +622,7 @@
                 </div>
             </div>
             <div class="row p-5">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div id="addressOne">
                         <h3 class="my-5">ADDRESS</h3>
                         <Address>
@@ -634,7 +634,7 @@
                         </Address>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div id="address">
                         <h3 class="my-5">CONTACT</h3>
                         <Address>
@@ -933,32 +933,44 @@
                 border-bottom: 2px solid #ffc107;
                 display: inline-block;
             }
+
+            @media (max-width: 575.98px) {
+                #profFour{
+                    margin-bottom: 20px;
+                }
+                #addInfoFour1{
+                    padding-bottom: 0 !important;
+                }
+                #addInfoFour2{
+                    padding-top: 0 !important;
+                }
+            }
         </style>
 
         <div class="row" id="topSection">
-            <div class="col-lg-9 col-md-9 p-5">
+            <div class="col-lg-9 col-md-8 p-5">
                 <h1 class="fullNameClass font-weight-bold"></h1><br>
                 <h5 class="titleClass text-warning font-weight-bold"></h5><br>
                 <p class="aboutMeClass"></p>
             </div>
-            <div class="col-lg-3 col-md-3 d-flex justify-content-center align-items-center">
+            <div  class="col-lg-3 col-md-4 d-flex justify-content-center align-items-center">
                 <img id="profFour" class="border border-warning rounded-circle" src="./img/mu.jpg" width="200">
             </div>
         </div>
         <div class="row" id="middleSection">
-            <div class="col-6 p-5">
+            <div id="addInfoFour1" class="col-lg-6 col-md-6 col-sm-12 p-5">
                 <p class="py-3 mb-0"><i class="far fa-envelope"></i><span class="emailClass"></span></p>
                 <p class="py-3 mb-0"><i class="fas fa-globe"></i><span class="perwebClass"></span></p>
                 <p class="py-3 mb-0"><i class="fas fa-map-marker-alt"></i><span class="addressClass"></span></p>
             </div>
-            <div class="col-6 p-5">
+            <div id="addInfoFour2" class="col-lg-6 col-md-6 col-sm-12 p-5">
                 <p class="py-3 mb-0"><i class="fas fa-phone"></i><span class="phoneClass"></span></p>
                 <p class="py-3 mb-0"><i class="far fa-calendar-alt"></i><span class="dateOfBirthClass"></span></p>
                 <p class="py-3 mb-0"><i class="fas fa-map-marked-alt"></i><span class="placeOfBirthClass"></span></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-6 p-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-5">
                 <div>
                     <h3 class="font-weight-bold text-warning mb-5 text-uppercase">Work experience</h3>
                     <div class="mb-5">
@@ -985,7 +997,7 @@
                     <p><i class="fas fa-briefcase"></i><span class="upworkAccClass"></span></p>
                 </div>
             </div>
-            <div class="col-6 p-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-5">
                 <h3 class="font-weight-bold text-warning mb-5 text-uppercase">Skills</h3>
                 <div>
                     <button type="button" class="btn btn-warning mr-3 mb-3">
@@ -1047,15 +1059,70 @@
             #profileFiveBody .fullNameClass{
                 margin-top: -45px;
                 background-color: #FFFFFF;
+                color: #af1c0b;
             }
-            #eduProfFive, #expProfFive{
-                margin-top: -200px;
+            
+            #profFive{
+                width: 95%;
             }
             #titleWrapper{
                 margin-bottom: 100px;
             }
             .red-bg{
                 background-color: #af1c0b;
+            }
+            #profFiveContact{
+                height: 400px;
+            }
+            #eduProfFive, #expProfFive{
+                margin-top: -100px;
+            }
+            #profileFiveBody .aboutMeClass{
+                height: 200px;
+                display: flex;
+                align-items: center;
+            }
+            #profileFiveBody .progress-bar{
+                background-color: #af1c0b;
+            }
+            @media (max-width: 991.98px) {
+                #profileFiveBody{
+                    width: 100%;
+                }
+                #profFiveH2{
+                    font-size: 4rem !important;
+                }
+                .text-right{
+                    word-wrap: break-word;
+                }
+            }
+            @media (max-width: 768.98px) { 
+                #eduProfFive, #expProfFive{
+                    margin-top: 0;
+                }
+                #profFiveContact, #profFiveProgress {
+                    height: 450px;
+                }
+            }
+            @media (max-width: 575.98px) {
+                #profileFiveBody .border{
+                    margin:0 !important;
+                }
+                #profileFiveBody .fullNameClass{
+                    margin-top: 40px;
+                }
+                #profileFiveBody #titleWrapper{
+                    margin-bottom: 40px;
+                }
+                #profFive{
+                    width: 70% !important;
+                }
+                #profileFiveBody .pl-4, #profileFiveBody .pr-4{
+                    padding: 0 20px !important;
+                }
+                #profFiveContact p {
+                    text-align: left !important;
+                }
             }
         </style>
 
@@ -1067,19 +1134,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8">
+                <div class="col-lg-8 col-md-8 col-sm-12">
                     <h3 class="red-bg text-white text-center">ABOUT ME</h3>
                     <div class="aboutMeClass pl-4"></div>
                 </div>
-                <div class="col-4 d-flex align-items-center flex-column justify-content-center">
+                <div class="col-lg-4 col-md-4 col-sm-12 d-flex align-items-center flex-column justify-content-center">
                     <img id="profFive" class="rounded-circle" src="./img/mu.jpg" width="300">
-                    <h2>HELLO</h2>
+                    <h2 id="profFiveH2">HELLO</h2>
                 </div>
             </div>
             <div class="row">
-                <div id="eduProfFive" class="col-8">
+                <div id="eduProfFive" class="col-lg-8 col-md-8 col-sm-12">
                     <h3 class="red-bg text-white text-center">EDUCATION</h3>
-                    <div class="pl-4">
+                    <div class="pl-4 pt-2">
                         <h5 class="eduTitle01Class"></h5>
                         <p class="eduPlace01Class"></p>
                         <p class="eduInfo01Class"></p>
@@ -1091,26 +1158,24 @@
                         <p class="eduInfo03Class"></p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3 class="red-bg text-white text-center">CONTACT</h3>
-                    <div class="pr-4">
+                    <div id="profFiveContact"class="pr-4 d-flex flex-column justify-content-around">
                         <p class="text-right"><span class="emailClass"></span></p>
                         <p class="text-right"><span class="phoneClass"></span></p>
-                        <p class="text-right"><span class="perwebClass"></span></p>
-                        <p class="text-right"><span class="linkedinAccClass"></span></p>
-                        <p class="text-right"><span class="upworkAccClass"></span></p>
-                        <p><span class="addressClass"></span></p>
-                        <p><span class="dateOfBirthClass"></span></p>
-                        <p><span class="placeOfBirthClass"></span></p>
-                        <p><span class="languagesClass"></span></p>
-                        <p><span class="genderClass"></span></p>
+                        <!-- <p class="text-right"><span class="perwebClass"></span></p> -->
+                        <p class="text-right"><span class="addressClass"></span></p>
+                        <p class="text-right"><span class="dateOfBirthClass"></span></p>
+                        <p class="text-right"><span class="placeOfBirthClass"></span></p>
+                        <p class="text-right"><span class="languagesClass"></span></p>
+                        <p class="text-right"><span class="genderClass"></span></p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div id="expProfFive" class="col-8">
+                <div id="expProfFive" class="col-lg-8 col-md-8 col-sm-12">
                     <h3 class="red-bg text-white text-center">EXPERIENCE</h3>
-                    <div class="pl-4">
+                    <div class="pl-4 pt-2">
                         <h5 class="workTitle01Class"></h5>
                         <p class="workPlace01Class"></p>
                         <p class="workInfo01Class"></p>
@@ -1122,12 +1187,12 @@
                         <p class="workInfo03Class"></p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3 class="red-bg text-white text-center">SKILLS</h3>
-                    <div id="profFiveProgress" class="pr-4">
+                    <div id="profFiveProgress" class="d-flex flex-column justify-content-around pr-4">
                             <div class="pb-1">
                                 <div class="skill01Class text-right"></div>
-                                <div class="skillOnePercentClass"></div>
+                                <div class="skillOnePercentClass bg-danger"></div>
                             </div>
                             <div class="py-1">
                                 <div class="skill02Class text-right"></div>
