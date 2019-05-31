@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+    m = JSON.parse(localStorage.getItem('storeObj'));
+    FillTemplate()
+});
 // Hide profiles on start and open modal
 
 // $('#profileOneBody').hide();
@@ -156,9 +160,9 @@ $('.switch-box').on('click',(e)=>{
         $(sw).addClass('off');
     }
 });
-
+//m for the Sign up form
 //m for global Marjan - user 0
-let m = users[0];
+//let m = users[0];
 //Batman
 let b = users[1];
 //Elon Musk
@@ -166,6 +170,7 @@ let e = users[2];
 //IronMan
 let i = users[3];
 
+function FillTemplate(){
 $('.fullNameClass').text(m.fullName);
 $('.titleClass').text(m.title);
 $('.aboutMeClass').text(m.aboutMe);
@@ -225,4 +230,4 @@ $('.skill05Class').text(m.skill5);
 $('.skill05PercentClass').html(`<div class="progress"><div class="progress-bar" role="progressbar"
     aria-valuenow="${m.skill5Percent}" aria-valuemin="0" aria-valuemax="100" style="width: 100%">${m.skill5Percent}%</div>
 </div>`);
-    
+}

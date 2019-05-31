@@ -174,7 +174,7 @@ $('#contactNextBtn').on('click', () => {
     $('#contactInformation').show();
     addWorkInformation(x)
 })
-
+//Go to skills button
 $('#skillNextBtn').on('click', () => {
     addSkillPercent(x);
     $('#contactInformation').hide();
@@ -182,3 +182,10 @@ $('#skillNextBtn').on('click', () => {
 })
 
 let x;
+let m;
+//Create CV and save to local storage
+$('#createProfile').on('click', () =>{
+    localStorage.setItem('storeObj', JSON.stringify(x));
+    m = JSON.parse(localStorage.getItem('storeObj'));
+    console.log(m.fullName, 'created');
+});
