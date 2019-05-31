@@ -1,9 +1,10 @@
+//On document ready get the object and fill the templates
 $( document ).ready(function() {
     m = JSON.parse(localStorage.getItem('storeObj'));
     FillTemplate()
 });
-// Hide profiles on start and open modal
 
+// Hide profiles on start and open modal
 // $('#profileOneBody').hide();
 $('#profileTwoBody').hide();
 $('#profileThreeBody').hide();
@@ -11,7 +12,7 @@ $('#profileFourBody').hide();
 $('#profileFiveBody').hide();
 
 $('#modalButton').show();
-// midnightblue
+
 //modal nav bar shows and hides templates
 $('#updateProfileButton').on('click', () => {
     //Profile 01 Tab
@@ -141,6 +142,7 @@ $('#updateProfileButton').on('click', () => {
         }
     }
 )
+//Print Button
 $('#printProfileButton').on('click',()=>{
     // $('#exampleModal').modal('hide');
     let modal = $('#exampleModalLabel');
@@ -148,8 +150,8 @@ $('#printProfileButton').on('click',()=>{
     setTimeout(()=>{
         window.print();
     },500);
-})
-
+});
+//Switch box toggle
 $('.switch-box').on('click',(e)=>{
     let sw = $(e.currentTarget.children[1]);
     console.log(sw);
@@ -160,15 +162,21 @@ $('.switch-box').on('click',(e)=>{
         $(sw).addClass('off');
     }
 });
+//toggle menu on Index after clicking Front Page
+// $('#FrontPageButton').on('click',()=>{
+//     $('#MenuShowMe').removeClass('d-none');
+//     $('#MenuHideMe').addClass('d-none')
+// })
+
 //m for the Sign up form
 //m for global Marjan - user 0
 //let m = users[0];
 //Batman
-let b = users[1];
+//let b = users[1];
 //Elon Musk
-let e = users[2];
+//let e = users[2];
 //IronMan
-let i = users[3];
+//let i = users[3];
 
 function FillTemplate(){
 $('.fullNameClass').text(m.fullName);
