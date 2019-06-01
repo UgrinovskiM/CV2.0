@@ -91,6 +91,11 @@ $('#signUpBtn').on('click', () => {
     $('#signUp').hide();
     $('#additionalInformation').show();
 });
+//Go back to sign up
+$('#BackToSignUp').on('click', () => {
+    $('#signUp').show();
+    $('#additionalInformation').hide();
+});
 //Go to education button
 $('#eduNextBtn').on('click', () => {
     addAdditionalInformation(x);
@@ -98,6 +103,45 @@ $('#eduNextBtn').on('click', () => {
     $('#additionalInformation').hide();
     $('#eduInformation').show();
 });
+//Go back to additional info
+$('#BackToAddInfo').on('click', () => {
+    $('#additionalInformation').show();
+    $('#eduInformation').hide();
+});
+//Go to work button
+$('#workNextBtn').on('click', () => {
+    $('#eduInformation').hide();
+    $('#workInformation').show();
+    addEduInformation(x)
+});
+//Go back to education info
+$('#BackToEdu').on('click', () => {
+    $('#eduInformation').show();
+    $('#workInformation').hide();
+});
+//Go to contact button
+$('#contactNextBtn').on('click', () => {
+    $('#workInformation').hide();
+    $('#contactInformation').show();
+    addWorkInformation(x)
+})
+//Go back to work info
+$('#BackToWork').on('click', () => {
+    $('#contactInformation').hide();
+    $('#workInformation').show();
+});
+//Go to skills button
+$('#skillNextBtn').on('click', () => {
+    addSkillPercent(x);
+    $('#contactInformation').hide();
+    $('#skillInformation').show();
+});
+//Go back to contact
+$('#BackToContact').on('click', () => {
+    $('#contactInformation').show();
+    $('#skillInformation').hide();
+});
+
 //Get additional information
 function addAdditionalInformation(x) {
     x.title = $('#title').val();
@@ -144,42 +188,25 @@ function addEduInformation(x) {
 }
 //Get work information
 function addWorkInformation(x){
-    // x.workPlace01 = $('#workPlace01').val();
+    x.workPlace01 = $('#workPlace01').val();
     x.workTitle01 = $('#workTitle01').val();
     x.workNumberFrom01 = $('#workNumberFrom01').val();
     x.workNumberTo01 = $('#workNumberTo01').val();
     x.workShortDes01 = $('#workShortDes01').val();
 
-    // x.workPlace02 = $('#workPlace02').val();
+    x.workPlace02 = $('#workPlace02').val();
     x.workTitle02 = $('#workTitle02').val();
     x.workNumberFrom02 = $('#workNumberFrom02').val();
     x.workNumberTo02 = $('#workNumberTo02').val();
     x.workShortDes02 = $('#workShortDes02').val();
 
-    // x.workPlace03 = $('#workPlace03').val();
+    x.workPlace03 = $('#workPlace03').val();
     x.workTitle03 = $('#workTitle03').val();
     x.workNumberFrom03 = $('#workNumberFrom03').val();
     x.workNumberTo03 = $('#workNumberTo03').val();
     x.workShortDes03 = $('#workShortDes03').val();
 }
-//Go to work button
-$('#workNextBtn').on('click', () => {
-    $('#eduInformation').hide();
-    $('#workInformation').show();
-    addEduInformation(x)
-});
-//Go to contact button
-$('#contactNextBtn').on('click', () => {
-    $('#workInformation').hide();
-    $('#contactInformation').show();
-    addWorkInformation(x)
-})
-//Go to skills button
-$('#skillNextBtn').on('click', () => {
-    addSkillPercent(x);
-    $('#contactInformation').hide();
-    $('#skillInformation').show();
-})
+
 
 let x;
 let m;
