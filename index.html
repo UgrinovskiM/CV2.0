@@ -19,9 +19,10 @@
 <body>
     <nav class="fixed-top d-flex justify-content-between navbar-expand-md">
         <div class="p-3" id="logo">Online CV Creator</div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
         <div id="menu">
             <ul>
                 <li class="p-3"><a href="#introIndex">Home</a></li>
@@ -35,7 +36,8 @@
     <div id="backToTop" class="p-2"><a href="#introIndex"><i class="fas fa-arrow-up fa-2x"></i></a></div>
     <div id="introIndex" class="row section d-flex justify-content-center align-items-center p-5">
         <div class="sectionText shadow p-5 mb-5">
-            <h3>Welcome to the Online CV Creator. You can create your business profile here, choose a template and print at any time</h3>
+            <h3>Welcome to the Online CV Creator. You can create your business profile here, choose a template and print
+                at any time</h3>
             <a role="button" class="btn btn-outline-primary btn-lg" href="#signUpIndex">Get started here</a>
         </div>
     </div>
@@ -88,6 +90,7 @@
                 <button class="btn btn-outline-primary btn-lg" type="submit" id="signUpBtn">Sign Up</button>
             </div>
         </div>
+        <!-- Additional Information section -->
         <div class="row" id="additionalInformation">
             <div class="form-group">
                 <div class="col-12">
@@ -123,10 +126,14 @@
                         <textarea id="aboutMe" class="form-control" cols="50"
                             rows="10">Hello people, nice to meet you. I am Marjan Ugrinovki and this is my personal portfolio. I have created my first website in 2014 and I am filling my portfolio ever since. I have worked alone and with other people (teams) on different projects. I had a chance to work with many native and worldwide clients. Below you can see some of the Testimonials and Portfolio pieces. Hope you will like them.</textarea><br>
                     </div>
-                    <button class="btn btn-outline-primary btn-lg" id="eduNextBtn">Go to Education next</button>
+                    <div class="col-12 d-flex justify-content-between">
+                        <button class="btn btn-outline-primary btn-lg" id="BackToSignUp">Back</button>
+                        <button class="btn btn-outline-primary btn-lg" id="eduNextBtn">Go to Education next</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Education Information section -->
         <div class="row" id="eduInformation">
             <div class="form-group">
                 <div class="col-12">
@@ -191,9 +198,13 @@
                             class="form-control">Team building, business communication, employment, time management, career management.</textarea><br>
                     </div>
                 </div>
-                <button class="btn btn-outline-primary btn-lg" id="workNextBtn">Go to work next</button>
+                <div class="col-12 d-flex justify-content-between back-next-btn">
+                    <button class="btn btn-outline-primary btn-lg" id="BackToAddInfo">Back</button>
+                    <button class="btn btn-outline-primary btn-lg" id="workNextBtn">Go to work next</button>
+                </div>
             </div>
         </div>
+        <!-- Work Information section -->
         <div class="row" id="workInformation">
             <div class="form-group">
                 <div class="col-12">
@@ -258,10 +269,13 @@
                             class="form-control">Team building, business communication, employment, time management, career management.</textarea><br>
                     </div>
                 </div>
-                <button class="btn btn-outline-primary btn-lg" id="contactNextBtn">Go to Contact next</button>
+                <div class="col-12 d-flex justify-content-between back-next-btn">
+                    <button class="btn btn-outline-primary btn-lg" id="BackToEdu">Back</button>
+                    <button class="btn btn-outline-primary btn-lg" id="contactNextBtn">Go to Contact next</button>
+                </div>
             </div>
         </div>
-
+        <!-- Contact section -->
         <div class="row" id="contactInformation">
             <div class="form-group">
                 <div class="col-12">
@@ -279,38 +293,80 @@
 
 
                 </div>
-                <button class="btn btn-outline-primary btn-lg" id="skillNextBtn">Go to Skills next</button>
+                <div class="col-12 d-flex justify-content-between">
+                    <button class="btn btn-outline-primary btn-lg" id="BackToWork">Back</button>
+                    <button class="btn btn-outline-primary btn-lg" id="skillNextBtn">Go to Skills next</button>
+                </div>
             </div>
         </div>
+        <!-- Skills section -->
         <div class="row" id="skillInformation">
             <div class="form-group">
                 <div class="col-12">
-                    <!-- Skill information -->
-                    <label for="skill1">Add first skill</label><br>
-                    <input type="text" class="form-control" id="skill1" value="HTML"><br>
-                    <label for="skill1Percent">Enter a number for percentages</label><br>
-                    <input type="number" id="skill1Percent" value="100"><br>
-                    <label for="skill2">Add second skill</label><br>
-                    <input type="text" class="form-control" id="skill2" value="CSS"><br>
-                    <label for="skill2Percent">Enter a number for percentages</label><br>
-                    <input type="number" id="skill2Percent" value="100"><br>
-                    <label for="skill3">Add third skill</label><br>
-                    <input type="text" class="form-control" id="skill3" value="JavaScript"><br>
-                    <label for="skill3Percent">Enter a number for percentages</label><br>
-                    <input type="number" id="skill3Percent" value="100"><br>
-                    <label for="skill4">Add fourth skill</label><br>
-                    <input type="text" class="form-control" id="skill4" value="CSS"><br>
-                    <label for="skill4Percent">Enter a number for percentages</label><br>
-                    <input type="number" id="skill4Percent" value="100"><br>
-                    <label for="skill5">Add fifth skill</label><br>
-                    <input type="text" class="form-control" id="skill5" value="C#"><br>
-                    <label for="skill5Percent">Enter a number for percentages</label><br>
-                    <input type="number" id="skill5Percent" value="100"><br>
+                    <div class="row w-100">
+                        <div class="col-6 pl-0">
+                            <label for="skill1">Add first skill</label>
+                            <input type="text" class="form-control" id="skill1" value="HTML5"><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill1Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill1Percent" value="95"><br>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <label for="skill2">Add second skill</label><br>
+                            <input type="text" class="form-control" id="skill2" value="CSS3"><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill2Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill2Percent" value="100"><br>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <label for="skill3">Add third skill</label><br>
+                            <input type="text" class="form-control" id="skill3" value="JavaScript"><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill3Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill3Percent" value="80"><br>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <label for="skill4">Add fourth skill</label><br>
+                            <input type="text" class="form-control" id="skill4" value="jQuery"><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill4Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill4Percent" value="75"><br>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <label for="skill5">Add fifth skill</label><br>
+                            <input type="text" class="form-control" id="skill5" value="C#"><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill5Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill5Percent" value="20"><br>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn btn-outline-primary btn-lg" id="createProfile" style="padding:9px 0px;"><a style="padding: 10px 20px;" href="profile.html">Create CV</a></button>
+                <div class="col-12 d-flex justify-content-between">
+                    <button class="btn btn-outline-primary btn-lg" id="BackToContact">Back</a></button>
+                    <button class="btn btn-outline-primary btn-lg" id="createProfile" style="padding:9px 0px;"><a
+                            style="padding: 10px 20px;" href="profile.html">Create CV</a></button>
+                </div>
             </div>
         </div>
         <!-- </form> -->
+        <!-- <div class="row" id="buttonsBottom">
+            <div>
+                <button class="btn btn-outline-primary" type="submit" id="">Previous</button>
+                <button class="btn btn-outline-primary" type="submit" id="">Next</button>
+            </div>
+            <div id="StepsBottom" class="d-flex col-12">
+                <div class="mx-2"></div>
+                <div class="mx-2"></div>
+                <div class="mx-2"></div>
+                <div class="mx-2"></div>
+                <div class="mx-2"></div>
+            </div>
+        </div> -->
     </div>
     <!-- Sign up steps -->
 

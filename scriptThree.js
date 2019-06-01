@@ -189,3 +189,4 @@ $('#createProfile').on('click', () =>{
     m = JSON.parse(localStorage.getItem('storeObj'));
     console.log(m.fullName, 'created');
 });
+//Sign up bottom steps

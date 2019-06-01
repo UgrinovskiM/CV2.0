@@ -49,6 +49,29 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
 }
+/* Sign Up CSS */
+#signUpIndex {
+    position: relative;
+}
+#buttonsBottom{
+    position: absolute;
+    bottom: 10px;
+}
+#signUpIndex .row{
+    width: 80%;
+    margin:0 auto;
+}
+#signUpIndex .form-group{
+    width: 100%;
+}
+#StepsBottom div{
+    height: 20px;
+    width: 100%;
+    background-color: #007bff;
+}
+.back-next-btn{
+    padding: 0;
+}
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { }
 /* Medium devices (tablets, less than 992px) */
