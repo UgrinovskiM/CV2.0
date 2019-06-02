@@ -171,16 +171,19 @@ function addSkillPercent(x) {
 }
 //Get education information
 function addEduInformation(x) {
+    x.eduPlace01 = $('#eduPlace01').val();
     x.eduTitle01 = $('#eduTitle01').val();
     x.eduNumberFrom01 = $('#eduNumberFrom01').val();
     x.eduNumberTo01 = $('#eduNumberTo01').val();
     x.eduShortDes01 = $('#eduShortDes01').val();
 
+    x.eduPlace02 = $('#eduPlace02').val();
     x.eduTitle02 = $('#eduTitle02').val();
     x.eduNumberFrom02 = $('#eduNumberFrom02').val();
     x.eduNumberTo02 = $('#eduNumberTo02').val();
     x.eduShortDes02 = $('#eduShortDes02').val();
 
+    x.eduPlace03 = $('#eduPlace03').val();
     x.eduTitle03 = $('#eduTitle03').val();
     x.eduNumberFrom03 = $('#eduNumberFrom03').val();
     x.eduNumberTo03 = $('#eduNumberTo03').val();
