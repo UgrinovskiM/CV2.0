@@ -210,7 +210,6 @@ function addWorkInformation(x){
     x.workShortDes03 = $('#workShortDes03').val();
 }
 
-
 let x;
 let m;
 //Create CV and save to local storage
@@ -219,4 +218,33 @@ $('#createProfile').on('click', () =>{
     m = JSON.parse(localStorage.getItem('storeObj'));
     console.log(m.fullName, 'created');
 });
-//Sign up bottom steps
+//Features page animation switch
+$( document ).ready(function() {
+    FeaturesSwitch();
+});
+
+function FeaturesSwitch(){
+    let feature01 = $('#Feature01');
+    let feature02 = $('#Feature02');
+    let feature03 = $('#Feature03');
+    $('#featImg02').hide();
+    $('#featImg03').hide();
+    $(feature01).on('mouseover', ()=>{
+        // console.log("01 active");
+        $('#featImg02').hide();
+        $('#featImg03').hide();
+        $('#featImg01').show();
+    })
+    $(feature02).on('mouseover', ()=>{
+        // console.log("02 active");
+        $('#featImg01').hide();
+        $('#featImg03').hide();
+        $('#featImg02').show();
+    })
+    $(feature03).on('mouseover', ()=>{
+        // console.log("03 active");
+        $('#featImg01').hide();
+        $('#featImg02').hide();
+        $('#featImg03').show();
+    })
+}

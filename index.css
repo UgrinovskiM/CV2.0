@@ -1,12 +1,19 @@
 html {
     scroll-behavior: smooth;
 }
-/* body{
+body{
     position: relative;
     overflow-y: scroll;
-} */
+}
 nav{
     background-color: #ffffffcc;
+}
+.nav-link{
+    padding-left:0;
+    padding-right: 0; 
+}
+.nav-link.active{
+    border-bottom: 2px solid #2a90ff;
 }
 #introIndex{
     background-image: url(assets/black-black-and-white-black-white-6663.jpg);
@@ -21,6 +28,7 @@ nav{
 }
 .sectionText{
     transition: all 0.5s;
+    cursor: default;
 }
 .sectionText:hover{
     box-shadow: 3px 3px 5px 1px grey;
@@ -53,13 +61,15 @@ nav{
     right: 30px;
     bottom: 30px;
     background-color: #ffffffcc;
+    z-index: 1;
 }
 #introIndex div{
     background-color: #ffffffa1;
 }
-/* #featuresIndex{
-    
-} */
+#featImg02 .carousel-inner{
+    max-height: 500px !important;
+    max-width: 353px !important;
+}
 /* Sign Up CSS */
 #signUpIndex {
     position: relative;
@@ -93,14 +103,39 @@ nav{
 @media (max-width: 991.98px) {  }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
-    .section{
+    /* .section{
         height: 100%;;
-    }   
+    }    */
 }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    
+    #menu{
+        background-color: #ffffff !important;
+    }
+    #logo{
+        padding: 0 0 0 10px !important;
+    }
+    #menu li{
+        padding: 0 5px !important;
+        font-size: 0.9rem;
+    }
+    #introIndex h3{
+        font-size: 2rem;
+    }
+    #introIndex h1{
+        font-size: 3.5rem;
+    }
+    #aboutIndex,#featuresIndex{
+        padding:40px 0 0 !important;
+    }
+    .section{
+        min-height: -webkit-fill-available;
+        height: 100%;;
+    }
+    #aboutIndex .sectionText, #featTextSection .sectionText {
+        padding-bottom: 0 !important;
+    }
+    #featTextSection{
+        padding: 0 !important;
+    }
 }
-
-
-
