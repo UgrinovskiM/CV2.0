@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styleOne.css"> -->
+    <!-- <link rel="stylesheet" href="styleThree.css"> -->
+    <!-- <link rel="stylesheet" href="print.css"> -->
+</head>
+
+<body data-spy="scroll" data-target="#menu">
+    <div id="signUpIndex" class="row form-row section d-flex justify-content-center align-items-center p-5">
+
+        <!-- <form class="needs-validation" novalidate> -->
+
+        <div id="signUp">
+            <div class="form-group">
+                <h3>Update your Resume</h3>
+                <div class="form-row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="fullName">Enter your Full Name</label><br>
+                        <input type="text" class="form-control" id="fullName" value="" required><br>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <label for="email">Enter your email</label><br>
+                        <input type="email" class="form-control" id="email" value=""><br>
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary btn-lg" type="submit" id="signUpBtn">Sign Up</button>
+            </div>
+        </div>
+        <!-- Additional Information section -->
+        <div class="row" id="additionalInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <h3>Let us get to know you little more</h3>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="title">Title</label><br>
+                        <input type="text" class="form-control" id="title" value=""><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="address">Address</label><br>
+                        <input type="text" class="form-control" id="address" value=""><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="dateOfBirth">Date of Birth</label><br>
+                        <input type="text" class="form-control" id="dateOfBirth" value=""><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="placeOfBirth">Place Of Birth</label><br>
+                        <input type="text" class="form-control" id="placeOfBirth" value=""><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="languages">Languages</label><br>
+                        <input type="text" class="form-control" id="languages" value=""><br>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="gender">Gender</label><br>
+                        <input type="text" class="form-control" id="gender" value=""><br>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="aboutMe">Describe yourself in couple of sentences</label><br>
+                        <textarea id="aboutMe" class="form-control" cols="50" rows="10"></textarea><br>
+                    </div>
+                    <!-- Buttons Back/Next -->
+                    <div class="col-12 d-flex justify-content-between">
+                        <button class="btn btn-outline-primary btn-lg" id="BackToSignUp">Back</button>
+                        <button class="btn btn-primary btn-lg" id="eduNextBtn">Go to Education next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Education Information section -->
+        <div class="row" id="eduInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <h3>Enter your latest education here</h3>
+                </div>
+                <!-- First Education -->
+                <div class="form-row">
+                    <div class="form-group col-lg-8 mb-0">
+                        <label for="eduTitle01">Education place</label>
+                        <input type="text" class="form-control" id="eduTitle01" value="">
+                        <label for="eduPlace01">Education title</label>
+                        <input type="text" class="form-control" id="eduPlace01" value="">
+                    </div>
+                    <div class="form-group col-lg-4 mb-0">
+                        <label for="eduNumberFrom01">From:</label>
+                        <input type="text" class="form-control" id="eduNumberFrom01" value="">
+                        <label for="eduNumberTo01">To:</label>
+                        <input type="text" class="form-control" id="eduNumberTo01" value="">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="eduShortDes01">Short Description</label><br>
+                        <textarea id="eduShortDes01" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- Second Education -->
+                <div class="form-row">
+                    <div class="form-group col-lg-8 mb-0">
+                        <label for="eduTitle02">Education place</label>
+                        <input type="text" class="form-control" id="eduTitle02" value="">
+                        <label for="eduPlace02">Education title</label>
+                        <input type="text" class="form-control" id="eduPlace02" value="">
+                    </div>
+                    <div class="form-group col-lg-4 mb-0">
+                        <label for="eduNumberFrom02">From:</label>
+                        <input type="text" class="form-control" id="eduNumberFrom02" value="">
+                        <label for="eduNumberTo02">To:</label>
+                        <input type="text" class="form-control" id="eduNumberTo02" value="">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="eduShortDes02">Short Description</label><br>
+                        <textarea id="eduShortDes02" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- Third Education -->
+                <div class="form-row">
+                    <div class="form-group col-lg-8 mb-0">
+                        <label for="eduTitle03">Education place</label>
+                        <input type="text" class="form-control" id="eduTitle03" value="">
+                        <label for="eduPlace03">Education title</label>
+                        <input type="text" class="form-control" id="eduPlace03" value="">
+                    </div>
+                    <div class="form-group col-lg-4 mb-0">
+                        <label for="eduNumberFrom03">From:</label>
+                        <input type="text" class="form-control" id="eduNumberFrom03" value="">
+                        <label for="eduNumberTo03">To:</label>
+                        <input type="text" class="form-control" id="eduNumberTo03" value="">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="eduShortDes03">Short Description</label><br>
+                        <textarea id="eduShortDes03" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- Buttons Back/Next -->
+                <div class="col-12 d-flex justify-content-between back-next-btn">
+                    <button class="btn btn-outline-primary btn-lg" id="BackToAddInfo">Back</button>
+                    <button class="btn btn-primary btn-lg" id="workNextBtn">Go to work next</button>
+                </div>
+            </div>
+        </div>
+        <!-- Work Information section -->
+        <div class="row" id="workInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <h3>Enter your latest work experience here</h3>
+                </div>
+                <!-- First Work -->
+                <div class="form-row">
+                    <div class="form-group col-lg-8 mb-0">
+                        <label for="workTitle01">Workplace</label>
+                        <input type="text" class="form-control" id="workTitle01" value="">
+                        <label for="workPlace01">Position</label>
+                        <input type="text" class="form-control" id="workPlace01" value="">
+                    </div>
+                    <div class="form-group col-lg-4 mb-0">
+                        <label for="workNumberFrom01">From:</label>
+                        <input type="text" class="form-control" id="workNumberFrom01" value="">
+                        <label for="workNumberTo01">To:</label>
+                        <input type="text" class="form-control" id="workNumberTo01" value="">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="workShortDes01">Short Description</label><br>
+                        <textarea id="workShortDes01" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- Second Work -->
+                <div class="form-row">
+                    <div class="form-group col-lg-8 mb-0">
+                        <label for="workTitle02">Workplace</label>
+                        <input type="text" class="form-control" id="workTitle02" value="">
+                        <label for="workPlace02">Position</label>
+                        <input type="text" class="form-control" id="workPlace02" value="">
+                    </div>
+                    <div class="form-group col-lg-4 mb-0">
+                        <label for="workNumberFrom02">From:</label>
+                        <input type="text" class="form-control" id="workNumberFrom02" value="">
+                        <label for="workNumberTo02">To:</label>
+                        <input type="text" class="form-control" id="workNumberTo02" value="">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="workShortDes02">Short Description</label><br>
+                        <textarea id="workShortDes02" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- Third Work -->
+                <div class="form-row">
+                    <div class="form-group col-lg-8 mb-0">
+                        <label for="workTitle03">Workplace</label>
+                        <input type="text" class="form-control" id="workTitle03" value="">
+                        <label for="workPlace03">Position</label>
+                        <input type="text" class="form-control" id="workPlace03" value="">
+                    </div>
+                    <div class="form-group col-lg-4 mb-0">
+                        <label for="workNumberFrom03">From:</label>
+                        <input type="text" class="form-control" id="workNumberFrom03" value="">
+                        <label for="workNumberTo03">To:</label>
+                        <input type="text" class="form-control" id="workNumberTo03" value="">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="workhortDes03">Short Description</label><br>
+                        <textarea id="workShortDes03" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- Buttons Back/Next -->
+                <div class="col-12 d-flex justify-content-between back-next-btn">
+                    <button class="btn btn-outline-primary btn-lg" id="BackToEdu">Back</button>
+                    <button class="btn btn-primary btn-lg" id="contactNextBtn">Go to Contact next</button>
+                </div>
+            </div>
+        </div>
+        <!-- Contact section -->
+        <div class="row" id="contactInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <!-- Contact information -->
+                    <label for="phoneNumber">Phone Number</label><br>
+                    <input type="text" class="form-control" id="phoneNumber" value=""><br>
+                    <label for="personalWeb">Personal website</label><br>
+                    <input type="text" class="form-control" id="personalWeb" value=""><br>
+                    <label for="upworkAcc">Upwork</label><br>
+                    <input type="text" class="form-control" id="upworkAcc" value=""><br>
+                    <label for="linkedinAcc">Linkedin</label><br>
+                    <input type="text" class="form-control" id="linkedinAcc" value=""><br>
+
+
+                </div>
+                <!-- Buttons Back/Next -->
+                <div class="col-12 d-flex justify-content-between">
+                    <button class="btn btn-outline-primary btn-lg" id="BackToWork">Back</button>
+                    <button class="btn btn-primary btn-lg" id="skillNextBtn">Go to Skills next</button>
+                </div>
+            </div>
+        </div>
+        <!-- Skills section -->
+        <div class="row" id="skillInformation">
+            <div class="form-group">
+                <div class="col-12">
+                    <div class="row w-100">
+                        <div class="col-6 pl-0">
+                            <label for="skill1">Add first skill</label>
+                            <input type="text" class="form-control" id="skill1" value=""><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill1Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill1Percent" value=""><br>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <label for="skill2">Add second skill</label><br>
+                            <input type="text" class="form-control" id="skill2" value=""><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill2Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill2Percent" value=""><br>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <label for="skill3">Add third skill</label><br>
+                            <input type="text" class="form-control" id="skill3" value=""><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill3Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill3Percent" value=""><br>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <label for="skill4">Add fourth skill</label><br>
+                            <input type="text" class="form-control" id="skill4" value=""><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill4Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill4Percent" value=""><br>
+                        </div>
+                        <div class="col-6 pl-0">
+                            <label for="skill5">Add fifth skill</label><br>
+                            <input type="text" class="form-control" id="skill5" value=""><br>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <label for="skill5Percent">Enter a number for percentages</label><br>
+                            <input class="form-control" type="number" id="skill5Percent" value=""><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- Buttons Back/Next -->
+                <div class="col-12 d-flex justify-content-between">
+                    <button class="btn btn-outline-primary btn-lg" id="BackToContact">Back</a></button>
+                    <button class="btn btn-primary btn-lg" id="createProfile" style="padding:9px 0px;"><a
+                            style="padding: 10px 20px; color: #fff;" href="profile.html">Create CV</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- </form> -->
+        <!-- <div class="row" id="buttonsBottom">
+        <div>
+            <button class="btn btn-outline-primary" type="submit" id="">Previous</button>
+            <button class="btn btn-outline-primary" type="submit" id="">Next</button>
+        </div>
+        <div id="StepsBottom" class="d-flex col-12">
+            <div class="mx-2"></div>
+            <div class="mx-2"></div>
+            <div class="mx-2"></div>
+            <div class="mx-2"></div>
+            <div class="mx-2"></div>
+        </div>
+    </div> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="edit.js"></script>
+    <script src="scriptThree.js"></script>
+    <script src="profile.js"></script>
+    <!-- <script src="sampleOne.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="users.json"></script>
+</body>
+
+</html>
