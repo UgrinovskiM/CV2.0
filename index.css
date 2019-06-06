@@ -5,6 +5,10 @@ body{
     position: relative;
     overflow-y: scroll;
 }
+#logo{
+    font-family: 'Fugaz One', cursive;
+    font-size: xx-large;
+}
 nav{
     background-color: #ffffffcc;
 }
@@ -21,6 +25,9 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
 }
+#introIndex .display-2 {
+    font-family: 'Fugaz One', cursive;
+}
 .section{
     height: 100vh;
     /* min-height: -webkit-fill-available; */
@@ -30,9 +37,10 @@ nav{
     transition: all 0.5s;
     cursor: default;
 }
-.sectionText:hover{
+.sectionText:hover, .sectionText.active{
     box-shadow: 3px 3px 5px 1px grey;
 }
+
 .sectionText:hover h3{
     color:#007bff;
 }

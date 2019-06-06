@@ -219,7 +219,7 @@ $('#createProfile').on('click', () =>{
     console.log(m.fullName, 'created');
 });
 //Features page animation switch
-$( document ).ready(function() {
+$(document).ready(function() {
     FeaturesSwitch();
 });
 
@@ -234,17 +234,26 @@ function FeaturesSwitch(){
         $('#featImg02').hide();
         $('#featImg03').hide();
         $('#featImg01').show();
+        $(feature02).removeClass('active');
+        $(feature03).removeClass('active');
+        $(feature01).addClass('active');
     })
     $(feature02).on('mouseover', ()=>{
         // console.log("02 active");
         $('#featImg01').hide();
         $('#featImg03').hide();
         $('#featImg02').show();
+        $(feature01).removeClass('active');
+        $(feature03).removeClass('active');
+        $(feature02).addClass('active');
     })
     $(feature03).on('mouseover', ()=>{
         // console.log("03 active");
         $('#featImg01').hide();
         $('#featImg02').hide();
         $('#featImg03').show();
+        $(feature01).removeClass('active');
+        $(feature02).removeClass('active');
+        $(feature03).addClass('active');
     })
 }

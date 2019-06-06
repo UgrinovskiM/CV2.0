@@ -3,6 +3,9 @@ $( document ).ready(function() {
     m = JSON.parse(localStorage.getItem('storeObj'));
     editTemplate()
 });
+$('#editBtn').on('click', () => {
+    createProfile(personalEmail);
+});
 function editTemplate(){
     // Edit sign up info
     $('#fullName').val(m.fullName);
