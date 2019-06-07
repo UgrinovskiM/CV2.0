@@ -220,22 +220,22 @@ $('.linkedinAccClass').html(`<a target="_blank" href="${m.linkedinAcc}">Linkedin
 
 $('.skill01Class').text(m.skill1);
 $('.skillOnePercentClass').html(`<div class="progress"><div class="progress-bar" role="progressbar"
-    aria-valuenow="${m.skill1Percent}" aria-valuemin="0" aria-valuemax="100" style="width: 100%">${m.skill1Percent}%</div>
+    aria-valuenow="${m.skill1Percent}" aria-valuemin="0" aria-valuemax="100" style="width: ${m.skill1Percent}%">${m.skill1Percent}%</div>
 </div>`);
 $('.skill02Class').text(m.skill2);
 $('.skill02PercentClass').html(`<div class="progress"><div class="progress-bar" role="progressbar"
-    aria-valuenow="${m.skill2Percent}" aria-valuemin="0" aria-valuemax="100" style="width: 100%">${m.skill2Percent}%</div>
+    aria-valuenow="${m.skill2Percent}" aria-valuemin="0" aria-valuemax="100" style="width: ${m.skill2Percent}%">${m.skill2Percent}%</div>
 </div>`);
 $('.skill03Class').text(m.skill3);
 $('.skill03PercentClass').html(`<div class="progress"><div class="progress-bar" role="progressbar"
-    aria-valuenow="${m.skill3Percent}" aria-valuemin="0" aria-valuemax="100" style="width: 100%">${m.skill3Percent}%</div>
+    aria-valuenow="${m.skill3Percent}" aria-valuemin="0" aria-valuemax="100" style="width: ${m.skill3Percent}%">${m.skill3Percent}%</div>
 </div>`);
 $('.skill04Class').text(m.skill4);
 $('.skill04PercentClass').html(`<div class="progress"><div class="progress-bar" role="progressbar"
-    aria-valuenow="${m.skill4Percent}" aria-valuemin="0" aria-valuemax="100" style="width: 100%">${m.skill4Percent}%</div>
+    aria-valuenow="${m.skill4Percent}" aria-valuemin="0" aria-valuemax="100" style="width: ${m.skill4Percent}%">${m.skill4Percent}%</div>
 </div>`);
 $('.skill05Class').text(m.skill5);
 $('.skill05PercentClass').html(`<div class="progress"><div class="progress-bar" role="progressbar"
-    aria-valuenow="${m.skill5Percent}" aria-valuemin="0" aria-valuemax="100" style="width: 100%">${m.skill5Percent}%</div>
+    aria-valuenow="${m.skill5Percent}" aria-valuemin="0" aria-valuemax="100" style="width: ${m.skill5Percent}%">${m.skill5Percent}%</div>
 </div>`);
 }

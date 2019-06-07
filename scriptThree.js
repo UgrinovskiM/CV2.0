@@ -210,7 +210,7 @@ function addWorkInformation(x){
     x.workShortDes03 = $('#workShortDes03').val();
 }
 
-let x;
+// let x;
 let m;
 //Create CV and save to local storage
 $('#createProfile').on('click', () =>{
