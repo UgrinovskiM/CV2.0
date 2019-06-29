@@ -105,28 +105,24 @@ $('#updateProfileButton').on('click', () => {
 
         if (!$("#profile04 .switch-box:nth-child(1) .switch").hasClass("off")) {
             $('#profFour').addClass('display-none');
+            $('#topInnerSection').removeClass('col-lg-9 col-md-8');
+            $('#topInnerSection').addClass('col-lg-12 col-md-12');
         } else {
             $('#profFour').removeClass('display-none');
+            $('#topInnerSection').addClass('col-lg-9  col-md-8');
+            $('#topInnerSection').removeClass('col-lg-12 col-md-12');
         }
         //If second toggle active
         if ($("#profile04 .switch-box:nth-child(2) .switch").hasClass("off")) {
 
         }
         //If third toggle active
-        if ($("#profile04 .switch-box:nth-child(3) .switch").hasClass("off")) {
-
-        }
-        //If fourth toggle active
-        if ($("#profile04 .switch-box:nth-child(4) .switch").hasClass("off")) {
-
-        }
-        //If fifth toggle active
-        if (!$("#profile04 .switch-box:nth-child(5) .switch").hasClass("off")) {
-            $('#topSection').css('background-color', 'midnightblue');
-            $('#middleSection').css('background-color', 'royalblue');
-        } else {
+        if (!$("#profile04 .switch-box:nth-child(3) .switch").hasClass("off")) {
             $('#topSection').css('background-color', '#4a284b');
             $('#middleSection').css('background-color', '#311332');
+        } else {
+            $('#topSection').css('background-color', 'midnightblue');
+            $('#middleSection').css('background-color', 'royalblue');
         }
     }
     // if ($('#profile05-tab').hasClass('active')) {

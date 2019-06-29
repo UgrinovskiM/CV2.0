@@ -46,7 +46,7 @@
                         </li> -->
                         <li class="nav-item">
                             <a class="nav-link" id="profile04-tab" data-toggle="tab" href="#profile04" role="tab"
-                                aria-controls="profile04" aria-selected="false">Pro</a>
+                                aria-controls="profile04" aria-selected="false">Professional</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" id="profile05-tab" data-toggle="tab" href="#profile05" role="tab"
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                         <!-- Profile 03 Tab -->
-                        <div class="tab-pane fade" id="profile03" role="tabpanel" aria-labelledby="profile03-tab">
+                        <!-- <div class="tab-pane fade" id="profile03" role="tabpanel" aria-labelledby="profile03-tab">
                             <div class="switch-box p-2">
                                 <div class="switch-text">Display/Print Resume in color</div>
                                 <div class="switch">
@@ -154,7 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- Profile 04 Tab -->
                         <div class="tab-pane fade" id="profile04" role="tabpanel" aria-labelledby="profile04-tab">
                             <div class="switch-box p-2">
@@ -172,24 +172,19 @@
                                 </div>
                             </div>
                             <div class="switch-box p-2">
-                                <div class="switch-text">Display/Print Resume in color</div>
-                                <div class="switch off">
-                                    <div class="switch-dot">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="switch-box p-2">
-                                <div class="switch-text">Display/Print Resume in color</div>
-                                <div class="switch off">
-                                    <div class="switch-dot">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="switch-box p-2">
                                 <div class="switch-text">Change color to Blue</div>
                                 <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
+                                </div>
+                            </div>
+                            <div class="p-2 d-flex justify-content-between">
+                                <div>Pick color</div>
+                                <div class="d-flex">
+                                    <div id="blueBox" class="palette"></div>
+                                    <div id="purpleBox" class="palette"></div>
+                                    <div id="greenBox" class="palette"></div>
+                                    <div></div>
                                 </div>
                             </div>
                         </div>
@@ -878,12 +873,12 @@
             }
 
             #topSection {
-                background-color: #4a284b;
+                background-color: #191970;
                 color: #FFFFFF;
             }
 
             #middleSection {
-                background-color: #311332;
+                background-color: #4169e1;
                 color: #FFFFFF;
             }
 
@@ -923,6 +918,23 @@
                 border-bottom: 2px solid #ffc107;
                 display: inline-block;
             }
+            .palette{
+                height: 20px;
+                width: 40px;
+                margin-left: 5px;
+            }
+            #blueBox{
+                background-color: #191970;
+                border:1px solid #4169e1;
+            }
+            #purpleBox{
+                background-color: #4a284b;
+                border:1px solid #311332;
+            }
+            #greenBox{
+                background-color: #135216;
+                border:1px solid #0e3510;
+            }
 
             @media (max-width: 575.98px) {
                 #profFour {
@@ -940,7 +952,7 @@
         </style>
 
         <div class="row" id="topSection">
-            <div class="col-lg-9 col-md-8 p-5">
+            <div id="topInnerSection" class="col-lg-9 col-md-8 p-5">
                 <h1 class="fullNameClass font-weight-bold"></h1><br>
                 <h5 class="titleClass text-warning font-weight-bold"></h5><br>
                 <p class="aboutMeClass"></p>
