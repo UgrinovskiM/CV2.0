@@ -25,7 +25,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Personal settings</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Profile settings</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -34,24 +34,24 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="profile01-tab" data-toggle="tab" href="#profile01" role="tab"
-                                aria-controls="profile01" aria-selected="true">Profile 1</a>
+                                aria-controls="profile01" aria-selected="true">Basic</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="profile02-tab" data-toggle="tab" href="#profile02" role="tab"
-                                aria-controls="profile02" aria-selected="false">Profile 2</a>
+                                aria-controls="profile02" aria-selected="false">Advanced</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" id="profile03-tab" data-toggle="tab" href="#profile03" role="tab"
                                 aria-controls="profile03" aria-selected="false">Profile 3</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" id="profile04-tab" data-toggle="tab" href="#profile04" role="tab"
-                                aria-controls="profile04" aria-selected="false">Profile 4</a>
+                                aria-controls="profile04" aria-selected="false">Pro</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" id="profile05-tab" data-toggle="tab" href="#profile05" role="tab"
-                                aria-controls="profile05" aria-selected="false">Profile 5</a>
-                        </li>
+                                aria-controls="profile05" aria-selected="false">Profile 4</a>
+                        </li> -->
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <!-- Profile 01 Tab -->
@@ -65,21 +65,7 @@
                                 </div>
                             </div>
                             <div class="switch-box p-2">
-                                <div class="switch-text">Background color</div>
-                                <div class="switch">
-                                    <div class="switch-dot">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="switch-box p-2">
                                 <div class="switch-text">Hide Skills progress</div>
-                                <div class="switch off">
-                                    <div class="switch-dot">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="switch-box p-2">
-                                <div class="switch-text">Show Education on first page</div>
                                 <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
@@ -212,13 +198,16 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" id="updateProfileButton">Update</button>
-                    <button type="button" class="btn btn-info" id="printProfileButton" data-dismiss="modal">Print</button>
-                    <button id="EditPageButton" type="button" class="btn btn-warning" style="padding:6px 0px;"><a style="padding: 10px 20px;color:#FFFFFF;" href="edit.html">Edit</a></button>
+                    <button type="button" class="btn btn-info" id="printProfileButton"
+                        data-dismiss="modal">Print</button>
+                    <button id="EditPageButton" type="button" class="btn btn-warning" style="padding:6px 0px;"><a
+                            style="padding: 10px 20px;color:#FFFFFF;" href="edit.html">Edit</a></button>
                 </div>
             </div>
         </div>
     </div>
     <!-- End of Modal -->
+
     <!-- Start of profile 01 -->
     <div id="profileOneBody">
         <style id="profileOneCSS">
@@ -295,11 +284,15 @@
             #profileOneBody .titleClass {
                 padding: 10px 0;
             }
-            @media (max-width: 768.98px) { 
-                #profileOneBody, .prof-one-info{
+
+            @media (max-width: 768.98px) {
+
+                #profileOneBody,
+                .prof-one-info {
                     text-align: center !important;
                 }
-                #profileOneBody .row:first-of-type{
+
+                #profileOneBody .row:first-of-type {
                     padding: 3rem 0 !important;
                 }
             }
@@ -563,7 +556,6 @@
                 <div class="col-12">
                     <div id="about">
                         <h3 class="my-5">ABOUT</h3>
-                        <p>Hello people, nice to meet you.</p>
                         <p id="aboutMe" class="aboutMeClass"></p>
                     </div>
                 </div>
@@ -675,7 +667,7 @@
     <!-- End of profile 02 -->
 
     <!-- Start of profile 03 -->
-    <div id="profileThreeBody">
+    <!-- <div id="profileThreeBody">
         <style id="profileThreeCSS">
             * {
                 margin: 0;
@@ -868,7 +860,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End of profile 03 -->
 
     <!-- Start of profile 04 -->
@@ -933,13 +925,15 @@
             }
 
             @media (max-width: 575.98px) {
-                #profFour{
+                #profFour {
                     margin-bottom: 20px;
                 }
-                #addInfoFour1{
+
+                #addInfoFour1 {
                     padding-bottom: 0 !important;
                 }
-                #addInfoFour2{
+
+                #addInfoFour2 {
                     padding-top: 0 !important;
                 }
             }
@@ -951,7 +945,7 @@
                 <h5 class="titleClass text-warning font-weight-bold"></h5><br>
                 <p class="aboutMeClass"></p>
             </div>
-            <div  class="col-lg-3 col-md-4 d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-4 d-flex justify-content-center align-items-center">
                 <img id="profFour" class="border border-warning rounded-circle" src="./img/mu.jpg" width="200">
             </div>
         </div>
@@ -1038,86 +1032,112 @@
     <!-- End of profile 04 -->
 
     <!-- Start of profile 05 -->
-    <div id="profileFiveBody">
+    <!-- <div id="profileFiveBody">
         <style id="profileFiveCSS">
-            #profileFiveBody{
+            #profileFiveBody {
                 width: 80%;
-                margin:auto;
+                margin: auto;
             }
-            #profileFiveBody .border{
+
+            #profileFiveBody .border {
                 border: 7px solid #af1c0b !important;
             }
-            #profileFiveBody .w-350{
+
+            #profileFiveBody .w-350 {
                 width: 350px;
                 font-size: 4.5rem;
             }
-            #profileFiveBody h2{
+
+            #profileFiveBody h2 {
                 font-size: 6.5rem;
             }
-            #profileFiveBody .fullNameClass{
+
+            #profileFiveBody .fullNameClass {
                 margin-top: -45px;
                 background-color: #FFFFFF;
                 color: #af1c0b;
             }
-            
-            #profFive{
+
+            #profFive {
                 width: 95%;
             }
-            #titleWrapper{
+
+            #titleWrapper {
                 margin-bottom: 100px;
             }
-            .red-bg{
+
+            .red-bg {
                 background-color: #af1c0b;
             }
-            #profFiveContact{
+
+            #profFiveContact {
                 height: 400px;
             }
-            #eduProfFive, #expProfFive{
+
+            #eduProfFive,
+            #expProfFive {
                 margin-top: -100px;
             }
-            #profileFiveBody .aboutMeClass{
+
+            #profileFiveBody .aboutMeClass {
                 height: 200px;
                 display: flex;
                 align-items: center;
             }
-            #profileFiveBody .progress-bar{
+
+            #profileFiveBody .progress-bar {
                 background-color: #af1c0b;
             }
+
             @media (max-width: 991.98px) {
-                #profileFiveBody{
+                #profileFiveBody {
                     width: 100%;
                 }
-                #profFiveH2{
+
+                #profFiveH2 {
                     font-size: 4rem !important;
                 }
-                .text-right{
+
+                .text-right {
                     word-wrap: break-word;
                 }
             }
-            @media (max-width: 768.98px) { 
-                #eduProfFive, #expProfFive{
+
+            @media (max-width: 768.98px) {
+
+                #eduProfFive,
+                #expProfFive {
                     margin-top: 0;
                 }
-                #profFiveContact, #profFiveProgress {
+
+                #profFiveContact,
+                #profFiveProgress {
                     height: 450px;
                 }
             }
+
             @media (max-width: 575.98px) {
-                #profileFiveBody .border{
-                    margin:0 !important;
+                #profileFiveBody .border {
+                    margin: 0 !important;
                 }
-                #profileFiveBody .fullNameClass{
+
+                #profileFiveBody .fullNameClass {
                     margin-top: 40px;
                 }
-                #profileFiveBody #titleWrapper{
+
+                #profileFiveBody #titleWrapper {
                     margin-bottom: 40px;
                 }
-                #profFive{
+
+                #profFive {
                     width: 70% !important;
                 }
-                #profileFiveBody .pl-4, #profileFiveBody .pr-4{
+
+                #profileFiveBody .pl-4,
+                #profileFiveBody .pr-4 {
                     padding: 0 20px !important;
                 }
+
                 #profFiveContact p {
                     text-align: left !important;
                 }
@@ -1158,10 +1178,9 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3 class="red-bg text-white text-center">CONTACT</h3>
-                    <div id="profFiveContact"class="pr-4 d-flex flex-column justify-content-around">
+                    <div id="profFiveContact" class="pr-4 d-flex flex-column justify-content-around">
                         <p class="text-right"><span class="emailClass"></span></p>
                         <p class="text-right"><span class="phoneClass"></span></p>
-                        <!-- <p class="text-right"><span class="perwebClass"></span></p> -->
                         <p class="text-right"><span class="addressClass"></span></p>
                         <p class="text-right"><span class="dateOfBirthClass"></span></p>
                         <p class="text-right"><span class="placeOfBirthClass"></span></p>
@@ -1188,31 +1207,31 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <h3 class="red-bg text-white text-center">SKILLS</h3>
                     <div id="profFiveProgress" class="d-flex flex-column justify-content-around pr-4">
-                            <div class="pb-1">
-                                <div class="skill01Class text-right"></div>
-                                <div class="skillOnePercentClass"></div>
-                            </div>
-                            <div class="py-1">
-                                <div class="skill02Class text-right"></div>
-                                <div class="skill02PercentClass"></div>
-                            </div>
-                            <div class="py-1">
-                                <div class="skill03Class text-right"></div>
-                                <div class="skill03PercentClass "></div>
-                            </div>
-                            <div class="py-1">
-                                <div class="skill04Class text-right"></div>
-                                <div class="skill04PercentClass"></div>
-                            </div>
-                            <div class="pt-1">
-                                <div class="skill05Class text-right"></div>
-                                <div class="skill05PercentClass"></div>
-                            </div>
+                        <div class="pb-1">
+                            <div class="skill01Class text-right"></div>
+                            <div class="skillOnePercentClass"></div>
                         </div>
+                        <div class="py-1">
+                            <div class="skill02Class text-right"></div>
+                            <div class="skill02PercentClass"></div>
+                        </div>
+                        <div class="py-1">
+                            <div class="skill03Class text-right"></div>
+                            <div class="skill03PercentClass "></div>
+                        </div>
+                        <div class="py-1">
+                            <div class="skill04Class text-right"></div>
+                            <div class="skill04PercentClass"></div>
+                        </div>
+                        <div class="pt-1">
+                            <div class="skill05Class text-right"></div>
+                            <div class="skill05PercentClass"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End of profile 05 -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

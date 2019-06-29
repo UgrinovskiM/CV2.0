@@ -1,5 +1,5 @@
 class Profile {
-    constructor(fullName, peremail, title, address, phoneNumber, upworkAcc, linkedinAcc, personalWeb, dateOfBirth, placeOfBirth, languages, gender, aboutMe,workPlace01, workTitle01, workNumberFrom01, workNumberTo01, workShortDes01, workPlace02, workTitle02, workNumberFrom02, workNumberTo02, workShortDes02, workPlace03, workTitle03, workNumberFrom03, workNumberTo03, workShortDes03, eduPlace01, eduTitle01, eduNumberFrom01, eduNumberTo01, eduShortDes01, eduPlace02, eduTitle02, eduNumberFrom02, eduNumberTo02, eduShortDes02, eduPlace03, eduTitle03, eduNumberFrom03, eduNumberTo03, eduShortDes03, skill1, skill1Percent, skill2, skill2Percent, skill3, skill3Percent, skill4, skill4Percent, skill5, skill5Percent) {
+    constructor(fullName, peremail, title, address, phoneNumber, upworkAcc, linkedinAcc, personalWeb, dateOfBirth, placeOfBirth, languages, gender, aboutMe, workPlace01, workTitle01, workNumberFrom01, workNumberTo01, workShortDes01, workPlace02, workTitle02, workNumberFrom02, workNumberTo02, workShortDes02, workPlace03, workTitle03, workNumberFrom03, workNumberTo03, workShortDes03, eduPlace01, eduTitle01, eduNumberFrom01, eduNumberTo01, eduShortDes01, eduPlace02, eduTitle02, eduNumberFrom02, eduNumberTo02, eduShortDes02, eduPlace03, eduTitle03, eduNumberFrom03, eduNumberTo03, eduShortDes03, skill1, skill1Percent, skill2, skill2Percent, skill3, skill3Percent, skill4, skill4Percent, skill5, skill5Percent) {
         this.fullName = fullName,
             this.peremail = peremail,
             this.title = title,
@@ -65,10 +65,6 @@ class Profile {
         return skill1name + skill1Percent
     }
 }
-// test new object
-// let marjan = new Profile('Marjan Ugrinovski','marjan.ugrinovski@yahoo.com','Front end developer','Evtim Sprostranov 34/1-2','28.10.1991','Skopje, Macedonia','Macedonian, English','male','Front end designer/developer at Purple Dot in Skopje, Macedonia','HTML & CSS','100');
-// let m = new Profile('Marjan Ugrinovski', 'marjan.ugrinovski@yahoo.com', 'Front End Developer', 'Evtim Sprostranov 34/1-2')
-// console.log(marjan);
 
 //Hiding forms from start
 $('#additionalInformation').hide();
@@ -190,7 +186,7 @@ function addEduInformation(x) {
     x.eduShortDes03 = $('#eduShortDes03').val();
 }
 //Get work information
-function addWorkInformation(x){
+function addWorkInformation(x) {
     x.workPlace01 = $('#workPlace01').val();
     x.workTitle01 = $('#workTitle01').val();
     x.workNumberFrom01 = $('#workNumberFrom01').val();
@@ -213,23 +209,23 @@ function addWorkInformation(x){
 // let x;
 let m;
 //Create CV and save to local storage
-$('#createProfile').on('click', () =>{
+$('#createProfile').on('click', () => {
     localStorage.setItem('storeObj', JSON.stringify(x));
     m = JSON.parse(localStorage.getItem('storeObj'));
     console.log(m.fullName, 'created');
 });
 //Features page animation switch
-$(document).ready(function() {
+$(document).ready(function () {
     FeaturesSwitch();
 });
 
-function FeaturesSwitch(){
+function FeaturesSwitch() {
     let feature01 = $('#Feature01');
     let feature02 = $('#Feature02');
     let feature03 = $('#Feature03');
     $('#featImg02').hide();
     $('#featImg03').hide();
-    $(feature01).on('mouseover', ()=>{
+    $(feature01).on('mouseover', () => {
         // console.log("01 active");
         $('#featImg02').hide();
         $('#featImg03').hide();
@@ -238,7 +234,7 @@ function FeaturesSwitch(){
         $(feature03).removeClass('active');
         $(feature01).addClass('active');
     })
-    $(feature02).on('mouseover', ()=>{
+    $(feature02).on('mouseover', () => {
         // console.log("02 active");
         $('#featImg01').hide();
         $('#featImg03').hide();
@@ -247,7 +243,7 @@ function FeaturesSwitch(){
         $(feature03).removeClass('active');
         $(feature02).addClass('active');
     })
-    $(feature03).on('mouseover', ()=>{
+    $(feature03).on('mouseover', () => {
         // console.log("03 active");
         $('#featImg01').hide();
         $('#featImg02').hide();
