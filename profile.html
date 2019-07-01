@@ -165,14 +165,7 @@
                                 </div>
                             </div>
                             <div class="switch-box p-2">
-                                <div class="switch-text">Display/Print Resume in color</div>
-                                <div class="switch off">
-                                    <div class="switch-dot">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="switch-box p-2">
-                                <div class="switch-text">Change color to Blue</div>
+                                <div class="switch-text">Show progress bars</div>
                                 <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
@@ -181,10 +174,10 @@
                             <div class="p-2 d-flex justify-content-between">
                                 <div>Pick color</div>
                                 <div class="d-flex">
-                                    <div id="blueBox" class="palette"></div>
-                                    <div id="purpleBox" class="palette"></div>
-                                    <div id="greenBox" class="palette"></div>
-                                    <div></div>
+                                    <div id="blueBox" class="palette" style="background-color: #4169e1;border:1px solid #191970;"></div>
+                                    <div id="purpleBox" class="palette" style="background-color: #4a284b;border:1px solid #311332;"></div>
+                                    <div id="greenBox" class="palette" style="background-color: #135216;border:1px solid #0e3510;"></div>
+                                    <div id="redBox" class="palette" style="background-color: #a70000;border:1px solid #5a0000;"></div>
                                 </div>
                             </div>
                         </div>
@@ -919,23 +912,19 @@
                 display: inline-block;
             }
             .palette{
-                height: 20px;
+                height: 25px;
                 width: 40px;
                 margin-left: 5px;
+                cursor: pointer;
             }
-            #blueBox{
-                background-color: #191970;
-                border:1px solid #4169e1;
+            #bottomSection a{
+                color: #ffc107;
+                text-decoration: underline;
             }
-            #purpleBox{
-                background-color: #4a284b;
-                border:1px solid #311332;
+            #profileFourBody .progress-bar{
+                background-color: #ffc107;
             }
-            #greenBox{
-                background-color: #135216;
-                border:1px solid #0e3510;
-            }
-
+            
             @media (max-width: 575.98px) {
                 #profFour {
                     margin-bottom: 20px;
@@ -973,7 +962,7 @@
                 <p class="py-3 mb-0"><i class="fas fa-map-marked-alt"></i><span class="placeOfBirthClass"></span></p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="bottomSection">
             <div class="col-lg-6 col-md-6 col-sm-12 p-5">
                 <div>
                     <h3 class="font-weight-bold text-warning mb-5 text-uppercase">Work experience</h3>
@@ -1003,7 +992,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 p-5">
                 <h3 class="font-weight-bold text-warning mb-5 text-uppercase">Skills</h3>
-                <div>
+                <div id="04progressButtons">
                     <button type="button" class="btn btn-warning mr-3 mb-3">
                         <div class="skill01Class text-white"></div>
                     </button>
@@ -1019,6 +1008,28 @@
                     <button type="button" class="btn btn-warning mr-3 mb-3">
                         <div class="skill05Class text-white"></div>
                     </button>
+                </div>
+                <div id="04progressBars" class="d-none">
+                    <div class="pb-1">
+                        <div class="skill01Class"></div>
+                        <div class="skillOnePercentClass"></div>
+                    </div>
+                    <div class="py-1">
+                        <div class="skill02Class"></div>
+                        <div class="skill02PercentClass"></div>
+                    </div>
+                    <div class="py-1">
+                        <div class="skill03Class"></div>
+                        <div class="skill03PercentClass"></div>
+                    </div>
+                    <div class="py-1">
+                        <div class="skill04Class"></div>
+                        <div class="skill04PercentClass"></div>
+                    </div>
+                    <div class="pt-1">
+                        <div class="skill05Class"></div>
+                        <div class="skill05PercentClass"></div>
+                    </div>
                 </div>
                 <div>
                     <h3 class="font-weight-bold text-warning my-5 text-uppercase">Education experience</h3>

@@ -113,17 +113,17 @@ $('#updateProfileButton').on('click', () => {
             $('#topInnerSection').removeClass('col-lg-12 col-md-12');
         }
         //If second toggle active
-        if ($("#profile04 .switch-box:nth-child(2) .switch").hasClass("off")) {
-
-        }
-        //If third toggle active
-        if (!$("#profile04 .switch-box:nth-child(3) .switch").hasClass("off")) {
-            $('#topSection').css('background-color', '#4a284b');
-            $('#middleSection').css('background-color', '#311332');
+        if (!$("#profile04 .switch-box:nth-child(2) .switch").hasClass("off")) {
+            $('#04progressBars').removeClass('d-none');
+            $('#04progressButtons').addClass('d-none');
         } else {
-            $('#topSection').css('background-color', 'midnightblue');
-            $('#middleSection').css('background-color', 'royalblue');
+            $('#04progressButtons').removeClass('d-none');
+            $('#04progressBars').addClass('d-none');
         }
+        //If color picked here
+        $('.palette').on('click',(e)=>{
+            ColorPicker(e)
+        })
     }
     // if ($('#profile05-tab').hasClass('active')) {
     //     console.log('Profile five activated');
@@ -134,6 +134,15 @@ $('#updateProfileButton').on('click', () => {
     //     $('#profileFiveBody').show();
     // }
 });
+
+//If color picked here
+
+function ColorPicker(e){
+    let currentTopColor = e.currentTarget.style.backgroundColor;
+    let currentMiddleColor = e.currentTarget.style.borderColor;
+    $('#topSection').css('background-color',currentTopColor);
+    $('#middleSection').css('background-color',currentMiddleColor);
+}
 
 //Print Button
 $('#printProfileButton').on('click', () => {
@@ -155,11 +164,6 @@ $('.switch-box').on('click', (e) => {
         $(sw).addClass('off');
     }
 });
-//toggle menu on Index after clicking Front Page
-// $('#FrontPageButton').on('click',()=>{
-//     $('#MenuShowMe').removeClass('d-none');
-//     $('#MenuHideMe').addClass('d-none')
-// })
 
 //m for the Sign up form
 //m for global Marjan - user 0
