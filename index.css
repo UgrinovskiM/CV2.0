@@ -118,6 +118,9 @@ nav{
     /* .section{
         height: 100%;;
     }    */
+    #skillInformation .col-sm-12{
+        padding: 0 !important;
+    }
 }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
