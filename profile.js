@@ -60,23 +60,33 @@ $('#updateProfileButton').on('click', () => {
         $('#profileFiveBody').hide();
         $('#profileTwoBody').show();
         //If first toggle active
-        if ($("#profile02 .switch-box:nth-child(1) .switch").hasClass("off")) {
-
+        if (!$("#profile02 .switch-box:nth-child(1) .switch").hasClass("off")) {
+            $('#profTwoProgress').addClass('d-none');
+        } else {
+            $('#profTwoProgress').removeClass('d-none');
         }
         //If second toggle active
-        if ($("#profile02 .switch-box:nth-child(2) .switch").hasClass("off")) {
-
+        if (!$("#profile02 .switch-box:nth-child(2) .switch").hasClass("off")) {
+            $('#AboutBottom').removeClass('d-none');
+            $('#AddConTop').removeClass('d-none');
+            $('#AboutTop').addClass('d-none');
+            $('#AddConBottom').addClass('d-none');
+        } else {
+            $('#AboutTop').removeClass('d-none');
+            $('#AddConBottom').removeClass('d-none');
+            $('#AboutBottom').addClass('d-none');
+            $('#AddConTop').addClass('d-none');
         }
         //If third toggle active
-        if ($("#profile02 .switch-box:nth-child(3) .switch").hasClass("off")) {
-
+        if (!$("#profile02 .switch-box:nth-child(3) .switch").hasClass("off")) {
+            $('#EduTop').removeClass('d-none');
+            $('#EduBottom').addClass('d-none');
+        } else {
+            $('#EduBottom').removeClass('d-none');
+            $('#EduTop').addClass('d-none');
         }
         //If fourth toggle active
-        if ($("#profile02 .switch-box:nth-child(4) .switch").hasClass("off")) {
-
-        }
-        //If fifth toggle active
-        if ($("#profile02 .switch-box:nth-child(5) .switch").hasClass("off")) {
+        if (!$("#profile02 .switch-box:nth-child(4) .switch").hasClass("off")) {
             $('#profileTwoBody #profTwo').removeClass('display-none');
             $('#profileTwoBody #sectionOne').addClass('d-flex justify-content-around align-items-center');
             $('#profileTwoBody #headerWrapper').removeClass('mx-auto m-5');
@@ -135,15 +145,13 @@ $('#updateProfileButton').on('click', () => {
     // }
 });
 
-//If color picked here
-
+//Color picker function
 function ColorPicker(e){
     let currentTopColor = e.currentTarget.style.backgroundColor;
     let currentMiddleColor = e.currentTarget.style.borderColor;
     $('#topSection').css('background-color',currentTopColor);
     $('#middleSection').css('background-color',currentMiddleColor);
 }
-
 //Print Button
 $('#printProfileButton').on('click', () => {
     // $('#exampleModal').modal('hide');

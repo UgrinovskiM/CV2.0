@@ -82,36 +82,29 @@
                         <!-- Profile 02 Tab -->
                         <div class="tab-pane fade" id="profile02" role="tabpanel" aria-labelledby="profile02-tab">
                             <div class="switch-box p-2">
-                                <div class="switch-text">Display/Print Resume in color</div>
-                                <div class="switch">
+                                <div class="switch-text">Hide Skills progress</div>
+                                <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
                                 </div>
                             </div>
                             <div class="switch-box p-2">
-                                <div class="switch-text">Display/Print Resume in color</div>
-                                <div class="switch">
+                                <div class="switch-text">Show address and contact on first page</div>
+                                <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
                                 </div>
                             </div>
                             <div class="switch-box p-2">
-                                <div class="switch-text">Display/Print Resume in color</div>
-                                <div class="switch">
-                                    <div class="switch-dot">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="switch-box p-2">
-                                <div class="switch-text">Display/Print Resume in color</div>
-                                <div class="switch">
+                                <div class="switch-text">Show education on first page</div>
+                                <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
                                 </div>
                             </div>
                             <div class="switch-box p-2">
                                 <div class="switch-text">Show image</div>
-                                <div class="switch">
+                                <div class="switch off">
                                     <div class="switch-dot">
                                     </div>
                                 </div>
@@ -171,13 +164,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-2 d-flex justify-content-between">
-                                <div>Pick color</div>
+                            <div class="p-2 mt-1 d-flex justify-content-between">
+                                <div>Pick template color</div>
                                 <div class="d-flex">
-                                    <div id="blueBox" class="palette" style="background-color: #4169e1;border:1px solid #191970;"></div>
-                                    <div id="purpleBox" class="palette" style="background-color: #4a284b;border:1px solid #311332;"></div>
-                                    <div id="greenBox" class="palette" style="background-color: #135216;border:1px solid #0e3510;"></div>
-                                    <div id="redBox" class="palette" style="background-color: #a70000;border:1px solid #5a0000;"></div>
+                                    <div id="blueBox" class="palette"
+                                        style="background-color: #4169e1;border:1px solid #191970;"></div>
+                                    <div id="purpleBox" class="palette"
+                                        style="background-color: #4a284b;border:1px solid #311332;"></div>
+                                    <div id="greenBox" class="palette"
+                                        style="background-color: #135216;border:1px solid #0e3510;"></div>
+                                    <div id="redBox" class="palette"
+                                        style="background-color: #a70000;border:1px solid #5a0000;"></div>
                                 </div>
                             </div>
                         </div>
@@ -526,8 +523,13 @@
                 h1 {
                     font-size: 2rem;
                 }
+
+                #profileTwoBody #sectionOne {
+                    flex-direction: column;
+                }
             }
         </style>
+        <!-- first section body -->
         <div class="container-fluid p-5" id="sectionOne">
             <img id="profTwo" src="./img/mu.jpg" class="display-none" width="150">
             <div class="mx-auto p-5 m-5 w-50 d-flex flex-column align-items-center text-center" id="headerWrapper">
@@ -540,7 +542,7 @@
         <div class="container-fluid" id="sectionTwo">
             <!-- <div class="row p-5"> -->
             <!-- about -->
-            <div class="row p-5">
+            <div id="AboutTop" class="row p-5">
                 <div class="col-12">
                     <div id="about">
                         <h3 class="my-5">ABOUT</h3>
@@ -548,7 +550,61 @@
                     </div>
                 </div>
             </div>
-
+            <!-- hidden Address and contact for switch -->
+            <!-- Address -->
+            <div id="AddConTop" class="row p-5 d-none">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div id="addressOne">
+                        <h3 class="my-5">ADDRESS</h3>
+                        <Address>
+                            <p><strong>Address: </strong><span class="addressClass"></span></p>
+                            <p><strong>Date of Birth: </strong><span class="dateOfBirthClass"></span></p>
+                            <p><strong>Place of Birth: </strong><span class="placeOfBirthClass"></span></p>
+                            <p><strong>Languages: </strong><span class="languagesClass"></span></p>
+                            <p><strong>Gender: </strong><span class="genderClass"></span></p>
+                        </Address>
+                    </div>
+                </div>
+                <!-- Contact -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div id="address">
+                        <h3 class="my-5">CONTACT</h3>
+                        <Address>
+                            <p><strong>E-mail: </strong><span class="emailClass"></span></p>
+                            <p><strong>Phone: </strong><span class="phoneClass"></span></p>
+                            <p><strong>Personal website: </strong><span class="perwebClass"></span>
+                            </p>
+                            <p><strong>Upwork: </strong><span class="upworkAccClass"></span></p>
+                            <p><strong>Linkedin: </strong><span class="linkedinAccClass"></span></p>
+                        </Address>
+                    </div>
+                </div>
+            </div>
+            <!-- education hidden for switch -->
+            <div id="EduTop" class="row p-5 d-none">
+                <div class="col-12">
+                    <div id="education">
+                        <h3 class="my-5">EDUCATION</h3>
+                        <div id="eduOne" class="py-3">
+                            <p id="eduPlace01" class="eduPlace01Class"></p>
+                            <p id="eduTitle01" class="eduTitle01Class"></p>
+                            <p id="eduInfo01" class="eduInfo01Class"></p>
+                        </div>
+                        <hr>
+                        <div id="eduTwo" class="py-3">
+                            <p id="eduPlace02" class="eduPlace02Class"></p>
+                            <p id="eduTitle02" class="eduTitle02Class"></p>
+                            <p id="eduInfo02" class="eduInfo02Class"></p>
+                        </div>
+                        <hr>
+                        <div id="eduThree" class="py-3">
+                            <p id="eduPlace03" class="eduPlace03Class"></p>
+                            <p id="eduTitle03" class="eduTitle03Class"></p>
+                            <p id="eduInfo03" class="eduInfo03Class"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- work experience -->
             <div class="row p-5">
                 <div class="col-12">
@@ -575,10 +631,10 @@
                 </div>
             </div>
             <!-- education -->
-            <div class="row p-5">
+            <div id="EduBottom" class="row p-5">
                 <div class="col-12">
                     <div id="education">
-                        <h3 class="my-5 text-center">EDUCATION</h3>
+                        <h3 class="my-5">EDUCATION</h3>
                         <div id="eduOne" class="py-3">
                             <p id="eduPlace01" class="eduPlace01Class"></p>
                             <p id="eduTitle01" class="eduTitle01Class"></p>
@@ -599,7 +655,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row p-5">
+            <!-- Address -->
+            <div id="AddConBottom" class="row p-5">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div id="addressOne">
                         <h3 class="my-5">ADDRESS</h3>
@@ -612,6 +669,7 @@
                         </Address>
                     </div>
                 </div>
+                <!-- Contact -->
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div id="address">
                         <h3 class="my-5">CONTACT</h3>
@@ -626,8 +684,19 @@
                     </div>
                 </div>
             </div>
-            <div class="row p-5">
-                <div id="profTwoProgress" class="col-12">
+            <!-- about hidden for switch -->
+            <div id="AboutBottom" class="row p-5 d-none">
+                <div class="col-12">
+                    <div id="about">
+                        <h3 class="my-5">ABOUT</h3>
+                        <p id="aboutMe" class="aboutMeClass"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills -->
+            <div class="row px-5">
+                <div id="profTwoProgress" class="col-12 pb-5">
+                    <h3 class="my-5">SKILLS</h3>
                     <div class="pb-1">
                         <div class="skill01Class"></div>
                         <div class="skillOnePercentClass"></div>
@@ -911,20 +980,23 @@
                 border-bottom: 2px solid #ffc107;
                 display: inline-block;
             }
-            .palette{
+
+            .palette {
                 height: 25px;
                 width: 40px;
                 margin-left: 5px;
                 cursor: pointer;
             }
-            #bottomSection a{
+
+            #bottomSection a {
                 color: #ffc107;
                 text-decoration: underline;
             }
-            #profileFourBody .progress-bar{
+
+            #profileFourBody .progress-bar {
                 background-color: #ffc107;
             }
-            
+
             @media (max-width: 575.98px) {
                 #profFour {
                     margin-bottom: 20px;
